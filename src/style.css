@@ -1,0 +1,17 @@
+header {
+    width: 100%;
+    z-index: 10;
+    padding: 1.2rem 5rem 1.2rem 5rem;
+    background-color: aquamarine;
+}
+
+header .box-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    gap: 1rem;
+}
