@@ -1,17 +1,58 @@
 header {
     width: 100%;
     z-index: 10;
+    position: fixed;
     padding: 1.2rem 5rem 1.2rem 5rem;
-    background-color: aquamarine;
+    background-color: var(--background);
+    backdrop-filter: blur(10%);
+    border-bottom: 1px solid var(--color-font);
 }
 
 header .box-header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    color: var(--color-font);
 }
 
-header nav {
+header .logo {
+    font-size: 1.3rem;
+    color: var(--color-font);
+}
+
+header .logo span {
+    color: darkblue;
+    margin-left: .1rem;
+}
+
+header .menu {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
+}
+
+header .menu .nav-link {
+    color: var(--color-font);
+    transition: .3s ease;
+}
+
+header .menu .nav-link:hover {
+    transform: translateY(-2px);
+}
+
+header .botao-contato {
+    padding: .5rem .8rem;
+    background-color: var(--color-font);
+    color: var(--white-font);
+    border-radius: .5rem;
+    transition: .3s ease;
+}
+
+header .botao-contato:hover {
+    background-color: var(--color-font-hover);
+}
+
+main {
+    min-height: 1000px;
 }
