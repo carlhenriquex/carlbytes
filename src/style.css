@@ -3,7 +3,8 @@ header {
     width: 100%;
     z-index: 10;
     position: fixed;
-    padding: 1.2rem 5rem 1.2rem 5rem;
+    top: 0;
+    padding: .8rem 5rem .8rem 5rem;
     background-color: var(--background);
     backdrop-filter: blur(10%);
     border-bottom: 1px solid var(--color-font);
@@ -66,6 +67,7 @@ main {
 
 /* ESTILOS DAS SEÇÕES */
 section {
+    padding-top: 4rem;
     margin-bottom: 10rem;
 }
 
@@ -105,7 +107,7 @@ section {
 .projetos .box-projetos {
     margin: 0 auto;
     background-color: var(--secondary-color);
-    width: 80%;
+    width: 1200px;
     height: 550px;
     border-radius: 25px;
     display: flex;
@@ -115,7 +117,7 @@ section {
 }
 
 .projetos .cabecalho-projetos {
-    max-width: 30%;
+    max-width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,7 +156,11 @@ section {
 }
 
 .projetos .cards-projetos .card-projeto:hover {
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.13);
+}
+
+.projetos .cards-projetos .card-projeto .btn-ver-projeto .icon-ver-projeto {
+    transition: transform .3s ease;
 }
 
 .projetos .cards-projetos .card-projeto:hover .btn-ver-projeto .icon-ver-projeto {
@@ -287,8 +293,8 @@ section {
 .stack .barra-stack {
     height: .7rem;
     border-radius: 20px;
-    background-color: rgb(178, 178, 178);
-    border: 1px solid var(--color-font);
+    background-color: rgb(226, 226, 226);
+    border: 1px solid gray;
     overflow: hidden;
 }
 

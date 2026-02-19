@@ -20,4 +20,5 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: var(--fonte);
+    scroll-behavior: smooth;
 }
