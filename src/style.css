@@ -107,13 +107,13 @@ section {
 .projetos .box-projetos {
     margin: 0 auto;
     background-color: var(--secondary-color);
-    width: 1200px;
+    width: 1250px;
     height: 550px;
     border-radius: 25px;
     display: flex;
     justify-content: center;
     gap: 6rem;
-    padding: 1.5rem;
+    padding: 1.7rem;
 }
 
 .projetos .cabecalho-projetos {
@@ -264,6 +264,11 @@ section {
     white-space: nowrap;
 }
 
+.titulo-acontecimento:hover {
+    background-color: #12c38b7a;
+    border: 1px solid gray;
+}
+
 /* ESTILOS DAS STACKS */
 
 .stacks {
@@ -302,6 +307,46 @@ section {
     height: 100%;
     border-radius: 20px;
     background: linear-gradient( 90deg, var(--color-font), var(--color-font-hover));
+}
+
+/* ESTILOS DA SEÇÃO DE CERTIFICADOS */
+
+.certificados .box-certificados {
+    width: 1100px;
+    height: 250px;
+    background-color: rgb(220, 220, 220);
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.certificados .box-certificados .box-inferior {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+}
+
+.certificados .box-certificados .box-inferior .empresas-certificados {
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+}
+
+.certificados .box-certificados .box-inferior .empresas-certificados img {
+    width: 100px; 
+}
+
+.certificados .box-certificados .box-inferior button {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 /* ESTILOS DO RODAPÉ (FOOTER) */
