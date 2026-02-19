@@ -1,8 +1,12 @@
 :root {
-    --fonte: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+
+    --fonte: "Google Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 
     --background: whitesmoke;
     --color-font: #12c38a;
+    --secondary-color: #cacaca6f;
+    --secondary-color: #12c38b44;
     --white-font: #fff;
     --smoke-font: #cacaca;
     --titulos-color: darkblue;
