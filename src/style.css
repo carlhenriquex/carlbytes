@@ -208,3 +208,59 @@ section {
     border-radius: 20px;
     background: linear-gradient( 90deg, var(--color-font), var(--color-font-hover));
 }
+
+/* ESTILOS DO RODAPÉ (FOOTER) */
+
+footer {
+    padding: 4rem 2rem 3rem 2rem;
+    background-color: #1d1d1d;
+}
+
+footer .box-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .box-footer .titulo-footer {
+    font-weight: 800;
+    letter-spacing: 6px;
+    font-size: 1.2rem;
+    color: var(--smoke-font);
+}
+
+footer .box-footer .midias-sociais {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .box-footer .midias-sociais .btn-midias-sociais {
+    width: 46px;
+    height: 46px;
+    display: grid;
+    place-items: center;
+    border-radius: 15px;
+    background-color: var(--smoke-font);
+    color: #000;
+    border: 1px solid rgb(34, 34, 34);
+    text-decoration: none;
+    box-shadow: 0 1px 2px rgb(85, 85, 85);
+    transition: transform .3s ease;
+}
+
+footer .box-footer .midias-sociais .btn-midias-sociais:hover {
+    background-color: var(--smoke-font);
+    transform: translateY(-2px);
+}
+
+footer .box-footer .midias-sociais .btn-midias-sociais i {
+    font-size: 1.05rem;
+}
+
+footer .box-footer .copy-footer {
+    font-size: .8rem;
+    color: var(--smoke-font);
+}
