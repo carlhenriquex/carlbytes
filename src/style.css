@@ -97,6 +97,96 @@ section {
     text-align: center;
 }
 
+/* ESTILOS DA SEÇÃO DE PROJETOS */
+
+/* .projetos {
+} */
+
+.projetos .box-projetos {
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    width: 80%;
+    height: 550px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    padding: 1.5rem;
+}
+
+.projetos .cabecalho-projetos {
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.projetos .cabecalho-projetos .titulo-projetos {
+    font-size: 3rem;
+}
+
+.projetos .cabecalho-projetos .subtitulo-projetos {
+    font-size: 1rem;
+}
+
+.projetos .cards-projetos {
+    max-width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-self: center;
+}
+
+.projetos .cards-projetos .card-projeto {
+    width: 320px;
+    height: 220px;
+    background-color: #fff;
+    color: #1d1d1d;
+    margin: 1rem;
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: .5rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.projetos .cards-projetos .card-projeto:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.projetos .cards-projetos .card-projeto:hover .btn-ver-projeto .icon-ver-projeto {
+    transform: translateX(4px);
+}
+
+.card-projeto .nome-projeto {
+    font-size: 1.2rem;
+}
+
+.card-projeto .descricao-projeto {
+    font-size: .9rem;
+}
+
+.card-projeto .btn-ver-projeto {
+    position: absolute;
+    bottom: 20px;
+    color: var(--color-font);
+    font-size: .95rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+    display: flex;
+    gap: .2rem;
+}
+
+.card-projeto .texto-ver-projeto {
+    color: var(--color-font);
+    font-size: .95rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+}
+
 /* ESTILOS DA SEÇÃO DESENVOLVIMENTO TÉCNICO */
 
 .box-habilidades {
@@ -124,7 +214,6 @@ section {
     bottom: 0;
     width: 1px;
     background-color: gray;
-
 }
 
 .acontecimento {
