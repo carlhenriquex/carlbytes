@@ -62,13 +62,42 @@ main {
 
 /* ESTILOS DO BANNER */
 .banner {
-    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+.sobremim-left, .sobremim-right {
+    flex: 1;
+}
+
+.sobremim-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.titulo-sobremim {
+    color: var(--color-font);
+    font-size: 1.4rem;
+}
+
+.descricao-sobremim {
+    max-width: 500px;
+    text-align: center;
 }
 
 /* ESTILOS DAS SEÇÕES */
 section {
     padding-top: 4rem;
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
+}
+
+section.banner {
+    margin-bottom: 0rem;
 }
 
 .box-titulos {
@@ -100,9 +129,6 @@ section {
 }
 
 /* ESTILOS DA SEÇÃO DE PROJETOS */
-
-/* .projetos {
-} */
 
 .projetos .box-projetos {
     margin: 0 auto;
