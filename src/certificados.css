@@ -1,0 +1,301 @@
+*{ box-sizing: border-box; }
+html, body{ height: 100%; }
+body{
+  margin: 0;
+  font-family: var(--pf-font);
+  background: radial-gradient(1200px 650px at 50% 0%, rgba(18,195,138,0.06), transparent 60%),
+              linear-gradient(180deg, #050607 0%, #000 100%);
+  color: var(--pf-texto);
+}
+
+/* TOPBAR */
+.pf-certificados__topbar{
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: rgba(8, 10, 10, 0.62);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.pf-certificados__topbar-inner{
+  max-width: var(--pf-maxw);
+  margin: 0 auto;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
+
+.pf-certificados__voltar,
+.pf-certificados__download-todos{
+  text-decoration: none;
+  color: rgba(255,255,255,0.78);
+  font-weight: 800;
+  font-size: 13px;
+  padding: 10px 12px;
+  border: 1px solid var(--pf-borda);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.03);
+}
+
+.inv-trilha__brand{
+  display: inline-flex;
+  align-items: baseline;
+  text-decoration: none;
+  letter-spacing: 0.6px;
+  font-weight: 800;
+}
+
+.inv-trilha__brand-word{
+  color: var(--inv-accent);
+  font-size: 22px;
+}
+.inv-trilha__brand-dot{
+  color: var(--inv-text);
+  font-size: 22px;
+  transform: translateY(-1px);
+}
+
+/* CABEÇALHO */
+.pf-certificados__pagina{
+  max-width: var(--pf-maxw);
+  margin: 0 auto;
+  padding: 28px 18px 70px;
+}
+
+.pf-certificados__cabecalho{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.pf-certificados__titulo{
+  margin: 0;
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  color: rgba(255,255,255,0.95);
+}
+
+.pf-certificados__texto{
+  margin: 14px auto 0;
+  max-width: 820px;
+  line-height: 1.85;
+  color: var(--pf-mutado);
+}
+
+.pf-certificados__filtros{
+  margin-top: 18px;
+  display: inline-flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pf-certificados__filtro{
+  appearance: none;
+  border: 1px solid var(--pf-borda);
+  background: rgba(255,255,255,0.03);
+  color: rgba(255,255,255,0.86);
+  padding: 10px 12px;
+  border-radius: 999px;
+  font-weight: 900;
+  font-size: 12px;
+  cursor: pointer;
+  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.pf-certificados__filtro:hover{
+  transform: translateY(-1px);
+  border-color: rgba(18,195,138,0.26);
+}
+
+.pf-certificados__filtro--ativo{
+  background: rgba(18,195,138,0.14);
+  border-color: rgba(18,195,138,0.30);
+}
+
+/* GRADE */
+.pf-certificados__grade{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.pf-certificados__item{
+  border-radius: var(--pf-raio-xl);
+  border: 1px solid var(--pf-borda);
+  background: var(--pf-superficie);
+  box-shadow: var(--pf-sombra);
+  overflow: hidden;
+}
+
+.pf-certificados__abrir{
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.pf-certificados__thumb{
+  height: 160px;
+  background: radial-gradient(480px 220px at 30% 20%, rgba(18,195,138,0.20), transparent 55%),
+              linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.pf-certificados__thumb-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(1.05) contrast(1.05);
+}
+
+.pf-certificados__thumb--pdf{
+  position: relative;
+}
+
+.pf-certificados__pdfbadge{
+  font-weight: 1000;
+  letter-spacing: 1px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(0,0,0,0.35);
+  color: rgba(255,255,255,0.92);
+}
+
+.pf-certificados__meta{
+  padding: 14px 14px 16px;
+}
+
+.pf-certificados__nome{
+  margin: 0;
+  font-size: 15px;
+  font-weight: 900;
+  color: rgba(255,255,255,0.92);
+}
+
+.pf-certificados__detalhe{
+  margin: 8px 0 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.62);
+}
+
+/* OVERLAY + VIEWER */
+.pf-certificados__overlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.72);
+  backdrop-filter: blur(8px);
+  display: none;
+  z-index: 80;
+  padding: 18px;
+}
+
+.pf-certificados__overlay.pf-certificados__overlay--aberto{
+  display: grid;
+  place-items: center;
+}
+
+.pf-certificados__viewer{
+  width: min(980px, 100%);
+  max-height: min(86vh, 900px);
+  border-radius: var(--pf-raio-xl);
+  border: 1px solid rgba(255,255,255,0.14);
+  background: var(--pf-superficie-forte);
+  box-shadow: 0 28px 80px rgba(0,0,0,0.70);
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.pf-certificados__viewer-topo{
+  padding: 14px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.pf-certificados__viewer-titulo{
+  font-weight: 1000;
+  color: rgba(255,255,255,0.95);
+}
+
+.pf-certificados__viewer-subtitulo{
+  margin-top: 6px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.62);
+}
+
+.pf-certificados__viewer-acoes{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.pf-certificados__viewer-download{
+  text-decoration: none;
+  font-weight: 1000;
+  font-size: 13px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(18,195,138,0.30);
+  background: rgba(18,195,138,0.14);
+  color: rgba(255,255,255,0.92);
+  white-space: nowrap;
+}
+
+.pf-certificados__viewer-fechar{
+  appearance: none;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.05);
+  color: rgba(255,255,255,0.92);
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.pf-certificados__viewer-corpo{
+  padding: 14px;
+  overflow: auto;
+}
+
+.pf-certificados__midia-img{
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(0,0,0,0.20);
+}
+
+.pf-certificados__midia-pdf{
+  width: 100%;
+  height: min(70vh, 720px);
+  border: 0;
+  border-radius: 16px;
+  background: rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+/* RESPONSIVO */
+@media (max-width: 980px){
+  .pf-certificados__grade{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px){
+  .pf-certificados__grade{ grid-template-columns: 1fr; }
+}

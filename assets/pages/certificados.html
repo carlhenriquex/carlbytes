@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificados | Portfólio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../src/global.css">
+  <link rel="stylesheet" href="../../src/certificados.css" />
+</head>
+
+<body class="pf-certificados">
+  <header class="pf-certificados__topbar" aria-label="Topo">
+    <div class="pf-certificados__topbar-inner">
+      <a class="pf-certificados__voltar" href="../../index.html" aria-label="Voltar para o início">
+        ← Voltar
+      </a>
+
+      <a class="inv-trilha__brand" href="#inicio" aria-label="Ir para o início">
+        <span class="inv-trilha__brand-word">CARLBYTES</span><span class="inv-trilha__brand-dot">.</span>
+      </a>
+
+      <a class="pf-certificados__download-todos" href="#" aria-label="Pasta de certificados">
+        Em breve
+      </a>
+    </div>
+  </header>
+
+  <main class="pf-certificados__pagina">
+    <section class="pf-certificados__cabecalho" aria-label="Apresentação">
+      <h1 class="pf-certificados__titulo">Especializações e Certificados</h1>
+      <p class="pf-certificados__texto">
+        Aqui estão meus certificados mais relevantes. Clique em qualquer um para ampliar e visualizar com mais conforto.
+      </p>
+
+      <div class="pf-certificados__filtros" aria-label="Filtros">
+        <button class="pf-certificados__filtro pf-certificados__filtro--ativo" type="button" data-filter="todos">
+          Todos
+        </button>
+        <button class="pf-certificados__filtro" type="button" data-filter="backend">
+          Backend
+        </button>
+        <button class="pf-certificados__filtro" type="button" data-filter="seguranca">
+          Cybersegurança
+        </button>
+        <button class="pf-certificados__filtro" type="button" data-filter="infra">
+          Infraestrutura
+        </button>
+        <button class="pf-certificados__filtro" type="button" data-filter="design">
+          Design
+        </button>
+      </div>
+    </section>
+
+    <section class="pf-certificados__grade" aria-label="Lista de certificados" id="pfCertificadosGrade">
+
+      <!-- ITEM 1 -->
+      <article class="pf-certificados__item" data-tags="seguranca" aria-label="Certificado FAST CESAR School - Cybersegurança">
+        <button
+          class="pf-certificados__abrir"
+          type="button"
+          data-cert-title="FAST — CESAR School (Cybersegurança)"
+          data-cert-subtitle="Formação complementar"
+          data-cert-media="../images/cyberseguranca_fast.png"
+          data-cert-kind="image"
+          data-cert-download="../images/cyberseguranca_fast.png"
+        >
+          <div class="pf-certificados__thumb" aria-hidden="true">
+            <img class="pf-certificados__thumb-img" src="../images/cyberseguranca_fast.png" alt="Miniatura do certificado FAST CESAR School" loading="lazy">
+          </div>
+
+          <div class="pf-certificados__meta">
+            <h2 class="pf-certificados__nome">FAST - CESAR School</h2>
+            <p class="pf-certificados__detalhe">Cybersegurança • Rede de computadores</p>
+          </div>
+        </button>
+      </article>
+
+      <!-- ITEM 2 -->
+      <article class="pf-certificados__item" data-tags="infra" aria-label="Linux Fundamentals - DIO">
+        <button
+          class="pf-certificados__abrir"
+          type="button"
+          data-cert-title="Linux Fundamentals - DIO"
+          data-cert-subtitle="Formação complementar"
+          data-cert-media="../images/dio_linux_fundamentals.png"
+          data-cert-kind="image"
+          data-cert-download="../images/dio_linux_fundamentals.png"
+        >
+          <div class="pf-certificados__thumb" aria-hidden="true">
+            <img class="pf-certificados__thumb-img" src="../images/dio_linux_fundamentals.png" alt="Miniatura do certificado Linux DIO" loading="lazy">
+          </div>
+
+          <div class="pf-certificados__meta">
+            <h2 class="pf-certificados__nome">Linux - DIO</h2>
+            <p class="pf-certificados__detalhe">Linux • Servidores Web e DFS • IAC • SSH</p>
+          </div>
+        </button>
+      </article>
+
+      <!-- ITEM 3 -->
+      <article class="pf-certificados__item" data-tags="backend" aria-label="Bolsa futuro digital - Softex (Aponti)">
+        <button
+          class="pf-certificados__abrir"
+          type="button"
+          data-cert-title="Certificado Python - Softex"
+          data-cert-subtitle="Django • POO • MVT"
+          data-cert-media=""
+          data-cert-kind="image"
+          data-cert-download=""
+        >
+          <div class="pf-certificados__thumb" aria-hidden="true">
+            <img class="pf-certificados__thumb-img" src="" alt="Miniatura do certificado de Python" loading="lazy">
+          </div>
+
+          <div class="pf-certificados__meta">
+            <h2 class="pf-certificados__nome">Bolsa futuro digital - Softex (Aponti)</h2>
+            <p class="pf-certificados__detalhe">Python • Django • MTV • ORM</p>
+          </div>
+        </button>
+      </article>
+
+      <!-- ITEM 4 -->
+      <article class="pf-certificados__item" data-tags="infra" aria-label="Docker Fundamentals - DIO">
+        <button
+          class="pf-certificados__abrir"
+          type="button"
+          data-cert-title="Docker Fundamentals - DIO"
+          data-cert-subtitle="Docker • Linux"
+          data-cert-media="../images/dio_docker_fundamentals.png"
+          data-cert-kind="image"
+          data-cert-download="../images/dio_docker_fundamentals.png"
+        >
+          <div class="pf-certificados__thumb" aria-hidden="true">
+            <img class="pf-certificados__thumb-img" src="../images/dio_docker_fundamentals.png" alt="Miniatura do certificado de docker" loading="lazy">
+          </div>
+
+          <div class="pf-certificados__meta">
+            <h2 class="pf-certificados__nome">Docker Fundamentals - DIO</h2>
+            <p class="pf-certificados__detalhe">Docker • Linux</p>
+          </div>
+        </button>
+      </article>
+
+      <!-- ITEM 5 -->
+      <article class="pf-certificados__item" data-tags="infra" aria-label="DevOps Fundamentals - DIO">
+        <button
+          class="pf-certificados__abrir"
+          type="button"
+          data-cert-title="DevOps Fundamentals - DIO"
+          data-cert-subtitle="DevOps • CI/CD • Virtualização"
+          data-cert-media="../images/dio_devops_fundamentals.png"
+          data-cert-kind="image"
+          data-cert-download="../images/dio_devops_fundamentals.png"
+        >
+          <div class="pf-certificados__thumb" aria-hidden="true">
+            <img class="pf-certificados__thumb-img" src="../images/dio_devops_fundamentals.png" alt="Miniatura do certificado de DevOps" loading="lazy">
+          </div>
+
+          <div class="pf-certificados__meta">
+            <h2 class="pf-certificados__nome">DevOps Fundamentals - DIO</h2>
+            <p class="pf-certificados__detalhe">DevOps • CI/CD • Virtualização</p>
+          </div>
+        </button>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- VISUALIZADOR (LIGHTBOX) -->
+  <div class="pf-certificados__overlay" id="pfCertificadosOverlay" aria-hidden="true">
+    <div class="pf-certificados__viewer" role="dialog" aria-modal="true" aria-label="Visualizador de certificado">
+      <header class="pf-certificados__viewer-topo">
+        <div class="pf-certificados__viewer-textos">
+          <div class="pf-certificados__viewer-titulo" id="pfCertificadosViewerTitulo">Título</div>
+          <div class="pf-certificados__viewer-subtitulo" id="pfCertificadosViewerSubtitulo">Subtítulo</div>
+        </div>
+
+        <div class="pf-certificados__viewer-acoes">
+          <a class="pf-certificados__viewer-download" id="pfCertificadosViewerDownload" href="#" target="_blank" rel="noopener">
+            Baixar
+          </a>
+          <button class="pf-certificados__viewer-fechar" id="pfCertificadosViewerFechar" type="button" aria-label="Fechar">
+            ✕
+          </button>
+        </div>
+      </header>
+
+      <div class="pf-certificados__viewer-corpo" id="pfCertificadosViewerCorpo">
+        <!-- mídia entra via JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="../../src/scripts.js"></script>
+</body>
+</html>

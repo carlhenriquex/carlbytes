@@ -10,6 +10,47 @@
     --secondary-font: rgb(104, 104, 104);
     --smoke-font: #cacaca;
     --titulos-color: darkblue;
+
+    --inv-bg: #07090a;
+    --inv-surface: rgba(15, 17, 18, 0.72);
+    --inv-surface-strong: rgba(10, 12, 13, 0.86);
+    --inv-stroke: rgba(255,255,255,0.10);
+
+    --inv-text: rgba(255,255,255,0.92);
+    --inv-muted: rgba(255,255,255,0.70);
+
+    --inv-accent: #12c38a;         /* verde */
+    --inv-accent-deep: #0ea575;
+
+    --inv-danger: #b01616;
+    --inv-danger-soft: rgba(176, 22, 22, 0.35);
+
+    --inv-radius-lg: 18px;
+    --inv-radius-xl: 26px;
+
+    --inv-shadow-soft: 0 16px 38px rgba(0,0,0,0.45);
+    --inv-shadow-topbar: 0 10px 30px rgba(0,0,0,0.35);
+
+    --inv-maxw: 1160px;
+
+    --pf-bg: #07090a;
+    --pf-texto: rgba(255,255,255,0.92);
+    --pf-mutado: rgba(255,255,255,0.62);
+
+    --pf-acento: #12c38a;
+    --pf-acento-escuro: #0ea575;
+
+    --pf-borda: rgba(255,255,255,0.10);
+    --pf-superficie: rgba(255,255,255,0.03);
+    --pf-superficie-forte: rgba(10,12,13,0.92);
+
+    --pf-raio-lg: 18px;
+    --pf-raio-xl: 26px;
+
+    --pf-sombra: 0 18px 44px rgba(0,0,0,0.55);
+    --pf-maxw: 1160px;
+
+    --pf-font: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
 * {
