@@ -4,13 +4,12 @@
     --fonte: "Google Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 
     --background: whitesmoke;
-    --color-font: #12c38a;
-    --secondary-color: #cacaca6f;
-    --secondary-color: #12c38b44;
-    --white-font: #fff;
+    --primary-color: #12c38a;
+    --secondary-color: #0fa3a3;
+    --tertiary-color: #12c38b60;
+    --secondary-font: rgb(104, 104, 104);
     --smoke-font: #cacaca;
     --titulos-color: darkblue;
-    --color-font-hover: #0ea575;
 }
 
 * {
@@ -21,4 +20,8 @@
     text-decoration: none;
     font-family: var(--fonte);
     scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background);
 }
