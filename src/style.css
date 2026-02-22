@@ -410,8 +410,9 @@ section.banner {
     width: 100px; 
 }
 
-.certificados .box-certificados .box-inferior button {
+.certificados .box-certificados .box-inferior .button {
     background-color: #fff;
+    color: #000;
     padding: 10px 20px;
     border-radius: 50px;
     font-weight: 700;
@@ -419,7 +420,7 @@ section.banner {
     font-size: 1rem;
 }
 
-.certificados .box-certificados .box-inferior button:hover {
+.certificados .box-certificados .box-inferior .button:hover {
     background-color: var(--secondary-color);
     border: 1px solid var(--primary-color);
     color: #fff;
@@ -473,7 +474,7 @@ footer .box-footer .midias-sociais .btn-midias-sociais:hover {
 }
 
 footer .box-footer .midias-sociais .btn-midias-sociais i {
-    font-size: 1.05rem;
+    font-size: 1.2rem;
 }
 
 footer .box-footer .copy-footer {
