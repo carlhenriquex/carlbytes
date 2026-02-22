@@ -90,12 +90,13 @@ main {
     display: flex;
     align-items: center;
     gap: .8rem;
+    margin-top: 2rem;
 }
 
 .banner .sobremim-left .link-curriculo {
     width: fit-content;
     background: linear-gradient(160deg, var(--primary-color) 35%, var(--secondary-color));
-    padding: .5rem .8rem;
+    padding: .7rem 1rem;
     border-radius: .5rem;
     color: var(--white-font);
     transition: all .3s ease;
@@ -122,6 +123,33 @@ main {
     font-size: 2rem;
 }
 
+.sobremim-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobremim-right .aviso {
+    width: fit-content;
+    padding: 4px 6px;
+    background-color: red;
+    border-radius: 30px;
+    appearance: none;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: linear-gradient(180deg, rgba(176,22,22,0.32), rgba(176,22,22,0.18));
+    color: rgba(255,255,255,0.92);
+    padding: 16px 28px;
+    border-radius: 999px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.55);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: not-allowed;
+}
+
 /* ESTILOS DAS SEÇÕES */
 section {
     padding-top: 4rem;
@@ -138,11 +166,11 @@ section.banner {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
 }
 
 .box-titulos h2 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     color: var(--primary-color);
     font-weight: 800;
     letter-spacing: 0;
@@ -152,7 +180,7 @@ section.banner {
     width: 140px;
     height: 1px;
     margin: 1.1rem 0 1rem 0;
-    background-color: var(--primary-font);
+    background-color: var(--primary-color);
 }
 
 .box-titulos .descricao {
@@ -166,7 +194,7 @@ section.banner {
     margin: 0 auto;
     background-color: var(--tertiary-color);
     background: linear-gradient(160deg, var(--tertiary-color) 35%, var(--secondary-color));
-    width: 1250px;
+    width: 85vw;
     height: 550px;
     border-radius: 25px;
     display: flex;
@@ -175,8 +203,24 @@ section.banner {
     padding: 1.7rem;
 }
 
+
+
+.projetos .box-projetos {
+    margin: 0 auto;
+    background-color: var(--tertiary-color);
+    background: linear-gradient(160deg, var(--tertiary-color) 35%, var(--secondary-color));
+    width: 85vw;
+    height: 550px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem;
+    position: relative;
+}
+
 .projetos .cabecalho-projetos {
-    max-width: 40%;
+    max-width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -184,77 +228,100 @@ section.banner {
 }
 
 .projetos .cabecalho-projetos .titulo-projetos {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .projetos .cabecalho-projetos .subtitulo-projetos {
     font-size: 1rem;
 }
 
-.projetos .cards-projetos {
-    max-width: 70%;
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    align-self: center;
+.carousel-projetos {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+
+    user-select: none;
+    cursor: grab;
+    scrollbar-width: none; /* Firefox */
+    scroll-behavior: auto;
 }
 
-.projetos .cards-projetos .card-projeto {
-    width: 320px;
-    height: 220px;
-    background-color: #fff;
-    color: #1d1d1d;
-    margin: 1rem;
-    border-radius: 25px;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
+.carousel-projetos:active {
+    cursor: grabbing;
+}
+
+.carousel-projetos::-webkit-scrollbar {
+    display: none;
+}
+
+.item-projeto {
+    min-width: 220px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid var(--secondary-color);
+    -webkit-user-drag: none;
+}
+
+.img-wrap {
     position: relative;
-    gap: .5rem;
-    cursor: pointer;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.projetos .cards-projetos .card-projeto:hover {
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.13);
-}
-
-.card-projeto .nome-projeto {
-    font-size: 1.2rem;
-    transition: all .3s ease;
-}
-
-.projetos .cards-projetos .card-projeto:hover .nome-projeto {
-    color: var(--primary-color);
-}
-
-.card-projeto .descricao-projeto {
-    font-size: .9rem;
-}
-
-.card-projeto .btn-ver-projeto {
+.img-wrap::after {
+    content: "";
     position: absolute;
-    bottom: 20px;
-    color: var(--primary-color);
-    font-size: .95rem;
-    font-weight: 600;
-    letter-spacing: .7px;
-    display: flex;
-    gap: .2rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(
+    to top,
+    var(--secondary-color) 30%,
+    transparent
+    );
 }
 
-.card-projeto .texto-ver-projeto {
-    color: var(--primary-color);
-    font-size: .95rem;
-    font-weight: 600;
-    letter-spacing: .7px;
+.img-wrap img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+    pointer-events: none;
+    -webkit-user-drag: none;
+    
 }
 
-.projetos .cards-projetos .card-projeto .btn-ver-projeto .icon-ver-projeto {
-    transition: transform .3s ease;
+.img-wrap a {
+    pointer-events: none;
+    -webkit-user-drag: none;
+    
 }
 
-.projetos .cards-projetos .card-projeto:hover .btn-ver-projeto .icon-ver-projeto {
-    transform: translateX(4px);
+.item-projeto:hover img {
+    transform: scale(1.06);
+}
+
+.overlay-texto {
+  position: absolute;
+  bottom: 12px;
+  left: 14px;
+  right: 14px;
+  z-index: 2;
+  color: #fff;
+}
+
+.overlay-texto h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.overlay-texto span {
+  font-size: 0.75rem;
+  opacity: 0.7;
 }
 
 /* ESTILOS DA SEÇÃO DESENVOLVIMENTO TÉCNICO */
@@ -374,6 +441,9 @@ section.banner {
     background: linear-gradient( 90deg, var(--primary-color), var(--secondary-color));
 }
 
+/* ESTILOS DA SEÇÃO DE PROJETOS */
+
+
 /* ESTILOS DA SEÇÃO DE CERTIFICADOS */
 
 .certificados .box-certificados {
@@ -403,11 +473,11 @@ section.banner {
 .certificados .box-certificados .box-inferior .empresas-certificados {
     display: flex;
     align-items: center;
-    gap: 1rem; 
+    gap: 1.5rem; 
 }
 
 .certificados .box-certificados .box-inferior .empresas-certificados img {
-    width: 100px; 
+    width: 90px; 
 }
 
 .certificados .box-certificados .box-inferior .button {

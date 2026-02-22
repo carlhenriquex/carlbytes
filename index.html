@@ -33,6 +33,7 @@
                 <!-- <a href="#certificados" class="nav-link">Feedbacks</a> -->
                 <a href="#contatos" class="nav-link">Contatos</a>
             </nav>
+        </div>
             
     </header>
 
@@ -62,7 +63,9 @@
 
             <div class="sobremim-right">
                 <img src="" alt="" srcset="">
-
+                <div class="aviso">
+                    <span>⛔Site ainda em desenvolvimento.</span>
+                </div>
             </div>
             
         </section>
@@ -207,46 +210,72 @@
             <div class="box-projetos">
                 <div class="cabecalho-projetos">
                     <h3 class="titulo-projetos">Meu portfólio de projetos</h3>
-                    <p class="subtitulo-projetos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum inventore deserunt quidem a mollitia voluptas provident reprehenderit molestias odio. Ipsa blanditiis a possimus quidem similique non nulla fugit nobis consectetur?</p>
+                    <p class="subtitulo-projetos">Projetos que desenvolvidos ao longo das minhas formações. Aqui aplico conceitos de desenvolvimento web, backend, lógica de programação e versionamento com Git, priorizando código limpo, organização e escalabilidade.</p>
                 </div>
-                <div class="cards-projetos">
 
-                    <a href="https://projetoinclusaodigital.com/" class="card-projeto" target="_blank">
-                        <h4 class="nome-projeto">Inclusão Digital</h4>
-                        <p class="descricao-projeto">Projeto educacional voltado à inclusão de pessoas na área de tecnologia. Atuei no desenvolvimento da plataforma web e na estruturação de conteúdos digitais.</p>
-                        <div class="btn-ver-projeto">
-                            <p class="texto-ver-projeto">Ver projeto</p>
-                            <span class="icon-ver-projeto">→</span>
+                <div class="carousel-projetos">
+
+                    <a class="item-projeto" href="https://projetoinclusaodigital.com" target="_blank">
+                        <div class="img-wrap">
+                            <img src="assets/images/img1.webp" alt="">
+
+                            <div class="overlay-texto">
+                                <h4>Inclusão Digital</h4>
+                                <span>HTML • CSS • JavaScript</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="item-projeto" target="_blank">
+                        <div class="img-wrap">
+                            <img src="assets/images/img2.webp" alt="">
+
+                            <div class="overlay-texto">
+                                <h4>Chamada Escolar</h4>
+                                <span>PHP • JavaScript • MySQL</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="item-projeto" href="https://github.com/limaamorim/ProjetoIntegradorBackend" target="_blank">
+                        <div class="img-wrap">
+                            <img src="assets/images/img3.webp" alt="">
+
+                            <div class="overlay-texto">
+                                <h4>API de laudos</h4>
+                                <span>Python • Django • SQlite</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="item-projeto" target="_blank">
+                        <div class="img-wrap">
+                            <img src="assets/images/img4.webp" alt="">
+
+                            <div class="overlay-texto">
+                                <h4>Pais Connect</h4>
+                                <span>Python • Flask • MySQL</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="item-projeto" target="_blank">
+                        <div class="img-wrap">
+                            <img src="assets/images/img4.webp" alt="">
+
+                            <div class="overlay-texto">
+                                <h4>Pais Connect</h4>
+                                <span>Python • Flask • MySQL</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="item-projeto" target="_blank">
+                        <div class="img-wrap">
+                            <img src="assets/images/img4.webp" alt="">
+
+                            <div class="overlay-texto">
+                                <h4>Pais Connect</h4>
+                                <span>Python • Flask • MySQL</span>
+                            </div>
                         </div>
                     </a>
 
-                    <a href="#" class="card-projeto" target="_blank">
-                        <h4 class="nome-projeto">Chamada Escolar</h4>
-                        <p class="descricao-projeto">Sistema para gestão de frequência, notas e avisos, com perfis de gestor, professor e responsável. Foco em autenticação, regras de permissão e CRUD completo.</p>
-                        <div class="btn-ver-projeto">
-                            <p class="texto-ver-projeto">Ver projeto</p>
-                            <span class="icon-ver-projeto">→</span>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/limaamorim/ProjetoIntegradorBackend" class="card-projeto" target="_blank">
-                        <h4 class="nome-projeto">API de laudos</h4>
-                        <p class="descricao-projeto">API com autenticação e trilha de auditoria para laudos, incluindo registro de acessos e geração de documentos. Priorizei organização do domínio e segurança.</p>
-                        <div class="btn-ver-projeto">
-                            <p class="texto-ver-projeto">Ver projeto</p>
-                            <span class="icon-ver-projeto">→</span>
-                        </div>
-                    </a>
-
-                    <a href="#" class="card-projeto" target="_blank">
-                        <h4 class="nome-projeto">Pais Connect</h4>
-                        <p class="descricao-projeto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur maiores saepe labore est explicabo incidunt cum similique magni, nemo error modi? Corrupti magni quis possimus eligendi officiis quasi reiciendis voluptate?</p>
-                        <div class="btn-ver-projeto">
-                            <p class="texto-ver-projeto">Ver projeto</p>
-                            <span class="icon-ver-projeto">→</span>
-                        </div>
-                    </a>
-                    
                 </div>
             </div>
 
@@ -259,10 +288,9 @@
                 <p class="subtitulo-certificados">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis explicabo magni velit nesciunt exercitationem vel!</p>
                 <div class="box-inferior">
                     <div class="empresas-certificados">
-                        <img src="assets/images/logo-softex.svg" alt="Logo da Softex">
-                        <img src="assets/images/logo-cesar.svg" alt="Logo da Softex">
-                        <img src="https://assets.dio.me/VTgUqMiPAIgvsFdSvgSnVAB5lrqnNxY_N8h8LknnQys/f:webp/q:80/w:120/L2Fzc2V0cy9kaW9tZS9sb2dvLWZ1bGwuc3Zn" alt="logo dio" class="sc-rPWID cReurT">
-
+                        <img src="assets/images/logo-cesar.svg" alt="Logo da Cesar" style="width: 80px;">
+                        <img src="assets/images/logo-softex.svg" alt="Logo da Softex" style="width: 110px;">
+                        <img src="https://assets.dio.me/VTgUqMiPAIgvsFdSvgSnVAB5lrqnNxY_N8h8LknnQys/f:webp/q:80/w:120/L2Fzc2V0cy9kaW9tZS9sb2dvLWZ1bGwuc3Zn" alt="logo dio" style="width: 90px;">
                     </div>
                     <a class="button" href="assets/pages/certificados.html">Ver certificados</a>
                 </div>
@@ -280,10 +308,10 @@
             <div class="titulo-footer">CARLBYTES</div>
         
             <div class="midias-sociais">
-                <a href="" class="btn-midias-sociais" target="_blank" title="LinkedIn">
+                <a href="" class="btn-midias-sociais" target="_blank" title="Envie-me um e-mail">
                     <i class="bi bi-envelope-at-fill"></i>
                 </a>
-                <a href="" class="btn-midias-sociais" target="_blank" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/carloshenriquex" class="btn-midias-sociais" target="_blank" title="LinkedIn">
                     <i class="bi bi-linkedin"></i>
                 </a>
                 <a href="" class="btn-midias-sociais" target="_blank" title="WhatsApp">
@@ -295,6 +323,96 @@
         </div>
 
     </footer>
+
+        const slider = document.querySelector('.carousel-projetos');
+
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        slider.addEventListener('mousedown', e => {
+        isDown = true;
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+        slider.style.cursor = 'grabbing';
+        });
+
+        slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.style.cursor = 'grab';
+        });
+
+        slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.style.cursor = 'grab';
+        });
+
+        slider.addEventListener('mousemove', e => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 1.2;
+        slider.scrollLeft = scrollLeft - walk;
+        });
+
+        slider.style.cursor = 'grab';
+    </script> -->
+    <script>
+        const slider = document.querySelector('.carousel-projetos');
+
+        let isDown = false;
+        let isDragging = false;
+        let startX;
+        let scrollLeft;
+        const dragThreshold = 6; // pixels mínimos pra virar arrasto
+
+        slider.addEventListener('mousedown', e => {
+        isDown = true;
+        isDragging = false;
+        startX = e.pageX;
+        scrollLeft = slider.scrollLeft;
+        slider.style.cursor = 'grabbing';
+        document.body.style.userSelect = 'none';
+        });
+
+        slider.addEventListener('mousemove', e => {
+        if (!isDown) return;
+
+        const delta = e.pageX - startX;
+
+        // virou arrasto real
+        if (Math.abs(delta) > dragThreshold) {
+            isDragging = true;
+        }
+
+        e.preventDefault();
+        slider.scrollLeft = scrollLeft - delta * 1.2;
+        });
+
+        slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.style.cursor = 'grab';
+        document.body.style.userSelect = '';
+        });
+
+        slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.style.cursor = 'grab';
+        document.body.style.userSelect = '';
+        });
+
+        // BLOQUEIO DE CLIQUE NOS LINKS
+        slider.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', e => {
+            if (isDragging) {
+            e.preventDefault();
+            e.stopPropagation();
+            }
+        });
+        });
+
+        slider.style.cursor = 'grab';
+    </script>
     
 </body>
 </html>
