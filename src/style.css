@@ -7,7 +7,7 @@ header {
     padding: .8rem 5rem .8rem 5rem;
     background-color: var(--background);
     backdrop-filter: blur(10%);
-    border-bottom: 1px solid var(--color-font);
+    border-bottom: 1px solid var(--primary-color);
 }
 
 header .box-header {
@@ -16,16 +16,15 @@ header .box-header {
     justify-content: space-between;
     align-items: center;
     font-weight: 700;
-    color: var(--color-font);
 }
 
 header .logo {
     font-size: 1.3rem;
-    color: var(--color-font);
+    color: var(--primary-color);
 }
 
 header .logo span {
-    color: darkblue;
+    color: #0fa3a3;
     margin-left: .1rem;
 }
 
@@ -35,24 +34,12 @@ header .menu {
 }
 
 header .menu .nav-link {
-    color: var(--color-font);
+    color: var(--secondary-font);
     transition: .3s ease;
 }
 
 header .menu .nav-link:hover {
     transform: translateY(-2px);
-}
-
-header .botao-contato {
-    padding: .5rem .8rem;
-    background-color: var(--color-font);
-    color: var(--white-font);
-    border-radius: .5rem;
-    transition: .3s ease;
-}
-
-header .botao-contato:hover {
-    background-color: var(--color-font-hover);
 }
 
 /* ESTILOS DA PARTE PRINCIPAL */
@@ -65,29 +52,74 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 70vh;
+    min-height: 85vh;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding-inline: 7%;
 }
 
 .sobremim-left, .sobremim-right {
     flex: 1;
 }
 
-.sobremim-right {
+.sobremim-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 1.3rem;
+    gap: 1rem;
 }
 
 .titulo-sobremim {
-    color: var(--color-font);
-    font-size: 1.4rem;
+    font-size: 2.4rem;
+}
+
+.titulo-sobremim span {
+    background: linear-gradient(160deg, var(--primary-color) 35%, var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    width: fit-content;
 }
 
 .descricao-sobremim {
     max-width: 500px;
-    text-align: center;
+}
+
+.links-sobremim {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.banner .sobremim-left .link-curriculo {
+    width: fit-content;
+    background: linear-gradient(160deg, var(--primary-color) 35%, var(--secondary-color));
+    padding: .5rem .8rem;
+    border-radius: .5rem;
+    color: var(--white-font);
+    transition: all .3s ease;
+    box-shadow: 0 8px 20px rgba(18, 195, 138, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.banner .sobremim-left .link-curriculo:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(18, 195, 138, 0.4);
+}
+
+
+.banner .sobremim-left .link-github {
+    width: fit-content;
+    color: #fff;
+    background-color: transparent;
+    transition: all .3s ease;
+    font-size: 2rem;
 }
 
 /* ESTILOS DAS SEÇÕES */
@@ -97,7 +129,7 @@ section {
 }
 
 section.banner {
-    margin-bottom: 0rem;
+    padding-top: 1.5rem;
 }
 
 .box-titulos {
@@ -110,8 +142,8 @@ section.banner {
 }
 
 .box-titulos h2 {
-    font-size: 2.7rem;
-    color: var(--color-font);
+    font-size: 2.2rem;
+    color: var(--primary-color);
     font-weight: 800;
     letter-spacing: 0;
 }
@@ -120,7 +152,7 @@ section.banner {
     width: 140px;
     height: 1px;
     margin: 1.1rem 0 1rem 0;
-    background-color: var(--color-font);
+    background-color: var(--primary-font);
 }
 
 .box-titulos .descricao {
@@ -132,7 +164,8 @@ section.banner {
 
 .projetos .box-projetos {
     margin: 0 auto;
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+    background: linear-gradient(160deg, var(--tertiary-color) 35%, var(--secondary-color));
     width: 1250px;
     height: 550px;
     border-radius: 25px;
@@ -185,16 +218,13 @@ section.banner {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.13);
 }
 
-.projetos .cards-projetos .card-projeto .btn-ver-projeto .icon-ver-projeto {
-    transition: transform .3s ease;
-}
-
-.projetos .cards-projetos .card-projeto:hover .btn-ver-projeto .icon-ver-projeto {
-    transform: translateX(4px);
-}
-
 .card-projeto .nome-projeto {
     font-size: 1.2rem;
+    transition: all .3s ease;
+}
+
+.projetos .cards-projetos .card-projeto:hover .nome-projeto {
+    color: var(--primary-color);
 }
 
 .card-projeto .descricao-projeto {
@@ -204,7 +234,7 @@ section.banner {
 .card-projeto .btn-ver-projeto {
     position: absolute;
     bottom: 20px;
-    color: var(--color-font);
+    color: var(--primary-color);
     font-size: .95rem;
     font-weight: 600;
     letter-spacing: .7px;
@@ -213,10 +243,18 @@ section.banner {
 }
 
 .card-projeto .texto-ver-projeto {
-    color: var(--color-font);
+    color: var(--primary-color);
     font-size: .95rem;
     font-weight: 600;
     letter-spacing: .7px;
+}
+
+.projetos .cards-projetos .card-projeto .btn-ver-projeto .icon-ver-projeto {
+    transition: transform .3s ease;
+}
+
+.projetos .cards-projetos .card-projeto:hover .btn-ver-projeto .icon-ver-projeto {
+    transform: translateX(4px);
 }
 
 /* ESTILOS DA SEÇÃO DESENVOLVIMENTO TÉCNICO */
@@ -255,7 +293,7 @@ section.banner {
 
 .pino-acontecimento {
     position: absolute;
-    background-color: var(--color-font);
+    background-color: var(--primary-color);
     border-radius: 50%;
     box-shadow: 0 0 0 6px #12c38b52;
     left: 10px;
@@ -282,6 +320,7 @@ section.banner {
     width: fit-content;
     padding: 10px 14px;
     border: 1px solid gray;
+    background-color: rgb(226, 226, 226);
     border-radius: 14px;
     margin-left: 1rem;
     font-weight: 900;
@@ -291,8 +330,8 @@ section.banner {
 }
 
 .titulo-acontecimento:hover {
-    background-color: #12c38b7a;
-    border: 1px solid gray;
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
 /* ESTILOS DAS STACKS */
@@ -332,7 +371,7 @@ section.banner {
 .stack .preenchimento-stack {
     height: 100%;
     border-radius: 20px;
-    background: linear-gradient( 90deg, var(--color-font), var(--color-font-hover));
+    background: linear-gradient( 90deg, var(--primary-color), var(--secondary-color));
 }
 
 /* ESTILOS DA SEÇÃO DE CERTIFICADOS */
@@ -347,6 +386,10 @@ section.banner {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+.certificados .box-certificados .titulo-certificados {
+    font-size: 1.7rem;
 }
 
 .certificados .box-certificados .box-inferior {
@@ -371,8 +414,15 @@ section.banner {
     background-color: #fff;
     padding: 10px 20px;
     border-radius: 50px;
-    font-weight: 500;
+    font-weight: 700;
+    letter-spacing: .1px;
     font-size: 1rem;
+}
+
+.certificados .box-certificados .box-inferior button:hover {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    color: #fff;
 }
 
 /* ESTILOS DO RODAPÉ (FOOTER) */
