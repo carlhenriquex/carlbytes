@@ -49,11 +49,11 @@ body{
 }
 
 .inv-trilha__brand-word{
-  color: var(--inv-accent);
+  color: var(--primary-color);
   font-size: 22px;
 }
 .inv-trilha__brand-dot{
-  color: var(--inv-text);
+  color: var(--secondary-color);
   font-size: 22px;
   transform: translateY(-1px);
 }
@@ -96,8 +96,8 @@ body{
 
 .pf-certificados__filtro{
   appearance: none;
-  border: 1px solid var(--pf-borda);
-  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--secondary-color);
+  background: rgba(15, 163, 163, 0.3);
   color: rgba(255,255,255,0.86);
   padding: 10px 12px;
   border-radius: 999px;
@@ -109,12 +109,12 @@ body{
 
 .pf-certificados__filtro:hover{
   transform: translateY(-1px);
-  border-color: rgba(18,195,138,0.26);
+  border-color: #fff;
 }
 
 .pf-certificados__filtro--ativo{
-  background: rgba(18,195,138,0.14);
-  border-color: rgba(18,195,138,0.30);
+  background: rgba(18, 195, 138, 0.3);
+  border-color: var(--primary-color);
 }
 
 /* GRADE */
