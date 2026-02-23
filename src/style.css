@@ -55,7 +55,7 @@ main {
     min-height: 85vh;
     background-color: #1a1a1a;
     color: #fff;
-    padding-inline: 7%;
+    padding-inline: 6%;
 }
 
 .sobremim-left, .sobremim-right {
@@ -70,7 +70,7 @@ main {
 }
 
 .titulo-sobremim {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
 }
 
 .titulo-sobremim span {
@@ -84,6 +84,7 @@ main {
 
 .descricao-sobremim {
     max-width: 500px;
+    font-size: 1rem;
 }
 
 .links-sobremim {
@@ -107,6 +108,7 @@ main {
     gap: .5rem;
     font-size: 1.1rem;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 .banner .sobremim-left .link-curriculo:hover {
@@ -169,8 +171,8 @@ section.banner {
     margin-bottom: 5rem;
 }
 
-.box-titulos h2 {
-    font-size: 2.4rem;
+.box-titulos h1 {
+    font-size: 2.5rem;
     color: var(--primary-color);
     font-weight: 800;
     letter-spacing: 0;
@@ -188,13 +190,134 @@ section.banner {
     text-align: center;
 }
 
+/* ESTILOS DA SEÇÃO DESENVOLVIMENTO TÉCNICO */
+
+.box-habilidades {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin-inline: 7%;
+    gap: 1rem;
+}
+
+.linha-temporal{
+    display: flex;
+    align-items: center;
+}
+
+.lista-de-acontecimentos {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    list-style-type: none;
+}
+
+.lista-de-acontecimentos::before {
+    content: "";
+    position: absolute;
+    left: 16px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: gray;
+}
+
+.acontecimento {
+    position: relative;
+    margin-block: .8rem;
+    display: flex;
+
+}
+
+.pino-acontecimento {
+    position: absolute;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    box-shadow: 0 0 0 6px #12c38b52;
+    left: 10px;
+    top: 16px;
+    width: 12px;
+    height: 12px;
+}
+
+.item-acontecimento {
+    margin-left: 2.5rem;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+}
+
+.periodo-acontecimento {
+    font-size: .85rem;
+    white-space: nowrap;
+}
+
+.titulo-acontecimento {
+    width: fit-content;
+    padding: 10px 14px;
+    border: 1px solid gray;
+    background-color: rgb(226, 226, 226);
+    border-radius: 14px;
+    font-weight: 900;
+    font-size: .85rem;
+    letter-spacing: .75px;
+    white-space: nowrap;
+}
+
+.titulo-acontecimento:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* ESTILOS DAS STACKS */
+
+.stacks {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.stack {
+    margin-bottom: 1.2rem;
+    width: 100%;
+}
+
+.stack .titulo-stack {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.stack .titulo-stack .nome-stack {
+    font-weight: 800;
+}
+
+.stack .percentual-stack {
+    font-weight: 700;
+}
+
+.stack .barra-stack {
+    height: .7rem;
+    border-radius: 20px;
+    background-color: rgb(226, 226, 226);
+    border: 1px solid gray;
+    overflow: hidden;
+}
+
+.stack .preenchimento-stack {
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient( 90deg, var(--primary-color), var(--secondary-color));
+}
+
 /* ESTILOS DA SEÇÃO DE PROJETOS */
 
 .projetos .box-projetos {
     margin: 0 auto;
     background-color: var(--tertiary-color);
     background: linear-gradient(160deg, var(--tertiary-color) 35%, var(--secondary-color));
-    width: 85vw;
+    width: 90vw;
     height: 550px;
     border-radius: 25px;
     display: flex;
@@ -212,11 +335,11 @@ section.banner {
     gap: 1rem;
 }
 
-.projetos .cabecalho-projetos .titulo-projetos {
+.cabecalho-projetos .titulo-projetos {
     font-size: 2.5rem;
 }
 
-.projetos .cabecalho-projetos .subtitulo-projetos {
+.cabecalho-projetos .subtitulo-projetos {
     font-size: 1rem;
 }
 
@@ -309,130 +432,10 @@ section.banner {
   opacity: 0.7;
 }
 
-/* ESTILOS DA SEÇÃO DESENVOLVIMENTO TÉCNICO */
-
-.box-habilidades {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    margin-inline: 4rem;
-}
-
-.linha-temporal{
-    display: flex;
-    align-items: center;
-}
-
-.lista-de-acontecimentos {
-    margin: 0 auto;
-    position: relative;
-    list-style-type: none;
-}
-
-.lista-de-acontecimentos::before {
-    content: "";
-    position: absolute;
-    left: 16px;
-    top: 0;
-    bottom: 0;
-    width: 1px;
-    background-color: gray;
-}
-
-.acontecimento {
-    position: relative;
-    margin-block: .8rem;
-}
-
-.pino-acontecimento {
-    position: absolute;
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    box-shadow: 0 0 0 6px #12c38b52;
-    left: 10px;
-    top: 16px;
-    width: 12px;
-    height: 12px;
-}
-
-.item-acontecimento {
-    margin-left: 50px;
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    align-items: center;
-    gap: 2rem;
-    position: relative;
-}
-
-.periodo-acontecimento {
-    font-size: .85rem;
-    white-space: nowrap;
-}
-
-.titulo-acontecimento {
-    width: fit-content;
-    padding: 10px 14px;
-    border: 1px solid gray;
-    background-color: rgb(226, 226, 226);
-    border-radius: 14px;
-    margin-left: 1rem;
-    font-weight: 900;
-    font-size: .85rem;
-    letter-spacing: .75px;
-    white-space: nowrap;
-}
-
-.titulo-acontecimento:hover {
-    background-color: var(--primary-color);
-    color: #fff;
-}
-
-/* ESTILOS DAS STACKS */
-
-.stacks {
-    margin: 0 auto;
-    width: 85%;
-}
-
-.stack {
-    margin-bottom: 1.5rem;
-}
-
-.stack .titulo-stack {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: .5rem;
-}
-
-.stack .titulo-stack .nome-stack {
-    font-weight: 800;
-}
-
-.stack .percentual-stack {
-    font-weight: 700;
-}
-
-.stack .barra-stack {
-    height: .7rem;
-    border-radius: 20px;
-    background-color: rgb(226, 226, 226);
-    border: 1px solid gray;
-    overflow: hidden;
-}
-
-.stack .preenchimento-stack {
-    height: 100%;
-    border-radius: 20px;
-    background: linear-gradient( 90deg, var(--primary-color), var(--secondary-color));
-}
-
-/* ESTILOS DA SEÇÃO DE PROJETOS */
-
-
 /* ESTILOS DA SEÇÃO DE CERTIFICADOS */
 
 .certificados .box-certificados {
-    width: 1100px;
+    width: 85vw;
     height: 250px;
     background-color: rgb(220, 220, 220);
     margin: 0 auto;
@@ -535,4 +538,36 @@ footer .box-footer .midias-sociais .btn-midias-sociais i {
 footer .box-footer .copy-footer {
     font-size: .8rem;
     color: var(--smoke-font);
+}
+
+@media (max-width: 1024px) {
+
+    /* GERAL */
+    .banner h1, .box-titulos h1, .cabecalho-projetos .titulo-projetos {
+        font-size: 2rem;
+    }
+
+    /* BANNER */
+
+    .descricao-sobremim {
+        font-size: .9rem;
+    }
+
+    .banner .sobremim-left .link-curriculo {
+        font-size: 1rem;
+    }
+    
+    /* DESENVOLVIMENTO TÉCNICO */
+    .box-habilidades {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .lista-de-acontecimentos {
+        width: 540px;
+    }
+
+    .stacks {
+        margin: 0 auto;
+        width: 85%;
+    }
 }
