@@ -199,21 +199,6 @@ section.banner {
     border-radius: 25px;
     display: flex;
     justify-content: center;
-    gap: 6rem;
-    padding: 1.7rem;
-}
-
-
-
-.projetos .box-projetos {
-    margin: 0 auto;
-    background-color: var(--tertiary-color);
-    background: linear-gradient(160deg, var(--tertiary-color) 35%, var(--secondary-color));
-    width: 85vw;
-    height: 550px;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
     gap: 3rem;
     padding: 2rem;
     position: relative;
@@ -260,13 +245,13 @@ section.banner {
     min-width: 220px;
     text-decoration: none;
     border-radius: 10px;
-    border: 1px solid var(--secondary-color);
+    border: 2px solid var(--secondary-color);
     -webkit-user-drag: none;
 }
 
 .img-wrap {
     position: relative;
-    border-radius: 10px;
+    border-radius: 8px;
     overflow: hidden;
 }
 

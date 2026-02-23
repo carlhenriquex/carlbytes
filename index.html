@@ -217,7 +217,7 @@
 
                     <a class="item-projeto" href="https://projetoinclusaodigital.com" target="_blank">
                         <div class="img-wrap">
-                            <img src="assets/images/img1.webp" alt="">
+                            <img src="assets/images/img1.jpg" alt="">
 
                             <div class="overlay-texto">
                                 <h4>Inclusão Digital</h4>
@@ -227,7 +227,7 @@
                     </a>
                     <a class="item-projeto" target="_blank">
                         <div class="img-wrap">
-                            <img src="assets/images/img2.webp" alt="">
+                            <img src="assets/images/img2.jpg" alt="">
 
                             <div class="overlay-texto">
                                 <h4>Chamada Escolar</h4>
@@ -237,7 +237,7 @@
                     </a>
                     <a class="item-projeto" href="https://github.com/limaamorim/ProjetoIntegradorBackend" target="_blank">
                         <div class="img-wrap">
-                            <img src="assets/images/img3.webp" alt="">
+                            <img src="assets/images/img3.png" alt="">
 
                             <div class="overlay-texto">
                                 <h4>API de laudos</h4>
@@ -255,27 +255,6 @@
                             </div>
                         </div>
                     </a>
-                    <a class="item-projeto" target="_blank">
-                        <div class="img-wrap">
-                            <img src="assets/images/img4.webp" alt="">
-
-                            <div class="overlay-texto">
-                                <h4>Pais Connect</h4>
-                                <span>Python • Flask • MySQL</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="item-projeto" target="_blank">
-                        <div class="img-wrap">
-                            <img src="assets/images/img4.webp" alt="">
-
-                            <div class="overlay-texto">
-                                <h4>Pais Connect</h4>
-                                <span>Python • Flask • MySQL</span>
-                            </div>
-                        </div>
-                    </a>
-
                 </div>
             </div>
 
@@ -324,39 +303,6 @@
 
     </footer>
 
-        const slider = document.querySelector('.carousel-projetos');
-
-        let isDown = false;
-        let startX;
-        let scrollLeft;
-
-        slider.addEventListener('mousedown', e => {
-        isDown = true;
-        startX = e.pageX - slider.offsetLeft;
-        scrollLeft = slider.scrollLeft;
-        slider.style.cursor = 'grabbing';
-        });
-
-        slider.addEventListener('mouseleave', () => {
-        isDown = false;
-        slider.style.cursor = 'grab';
-        });
-
-        slider.addEventListener('mouseup', () => {
-        isDown = false;
-        slider.style.cursor = 'grab';
-        });
-
-        slider.addEventListener('mousemove', e => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - slider.offsetLeft;
-        const walk = (x - startX) * 1.2;
-        slider.scrollLeft = scrollLeft - walk;
-        });
-
-        slider.style.cursor = 'grab';
-    </script> -->
     <script>
         const slider = document.querySelector('.carousel-projetos');
 
