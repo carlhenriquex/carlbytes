@@ -168,12 +168,7 @@ main {
 
 /* ESTILOS DAS SEÇÕES */
 section {
-    padding-top: 4rem;
-    margin-bottom: 6rem;
-}
-
-section.banner {
-    padding-top: 1.5rem;
+    padding: 5rem 0 6rem 0;
 }
 
 .box-titulos {
@@ -447,6 +442,10 @@ section.banner {
 /* ESTILOS DA SEÇÃO DE CERTIFICADOS */
 
 .certificados {
+    padding-bottom: 0rem;
+}
+
+.certificados, .avaliacoes {
     background-color: #fff;
 }
 
@@ -502,6 +501,53 @@ section.banner {
 
 .certificados .box-certificados .box-inferior .button:hover {
     transform: translateY(-4px);
+}
+
+/* ESTILOS DOS DEPOIMENTOS */
+.avaliacoes {
+    display: flex;
+    justify-content: center;
+}
+
+.box-avaliacoes {
+    border-top: 1px solid #d3d3d3;
+    margin: 7%;
+    padding-top: 5rem;
+}
+
+.box-depoimentos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.depoimento {
+    width: 350px;
+    height: fit-content;
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid var(--secondary-color);
+}
+
+.depoimento .bi-quote {
+    color: var(--secondary-color);
+    font-size: 4rem;
+}
+
+.depoimento p {
+    color: #8c8c8c;
+    font-size: .9rem;
+}
+
+.depoimento .legenda-depoimento {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.legenda-depoimento .badge-depoimento {
+    font-size: .9rem;
+    color: var(--secondary-color);
+    white-space: nowrap;
 }
 
 /* ESTILOS DO RODAPÉ (FOOTER) */
