@@ -279,6 +279,60 @@ section {
     color: #fff;
 }
 
+.detalhes-acontecimento {
+    position: absolute;
+    left: 150px;
+    top: calc(100% + 10px);
+    width: 330px;
+    z-index: 8;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    padding: 14px;
+    border-radius: 20px;
+    box-shadow: 0 22px 60px rgba(0,0,0,0.55);
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .5s ease, transform .5s ease;
+}
+
+.titulo-acontecimento:hover + .detalhes-acontecimento {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.detalhes-acontecimento .titulo-detalhes {
+    font-size: .9rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.detalhes-acontecimento .texto-detalhes {
+    margin-block: .8rem;
+    color: #ffffffd2;
+    font-size: .8rem;
+}
+
+.detalhes-acontecimento .chips-detalhes {
+    display: flex;
+    gap: 8px;
+    margin-top: .9rem;
+    flex-wrap: wrap;
+}
+
+.detalhes-acontecimento .chips-detalhes .chip {
+    padding: .5rem .8rem;
+    font-weight: 800;
+    color: #fff;
+    background-color: rgba(0,0,0,0.35);
+    border: 1px solid var(--secondary-color);
+    border-radius: 25px;
+    font-size: .7rem;
+    white-space: nowrap;
+}
+
+
+
 /* ESTILOS DAS STACKS */
 
 .stacks {
@@ -524,7 +578,7 @@ section {
 .depoimento {
     width: 350px;
     height: fit-content;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 20px;
     border: 1px solid var(--secondary-color);
 }
@@ -532,6 +586,7 @@ section {
 .depoimento .bi-quote {
     color: var(--secondary-color);
     font-size: 4rem;
+    filter: opacity(.3);
 }
 
 .depoimento p {
