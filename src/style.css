@@ -199,6 +199,128 @@ section {
     text-align: center;
 }
 
+/* SECTION ROADMAP */
+
+.roadmap-wave {
+    padding: 5rem 2rem;
+    position: relative;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.header h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1b2c5a;
+}
+
+.header p {
+    color: #6b7280;
+    margin-top: .5rem;
+}
+
+.wave-wrapper {
+    position: relative;
+    min-height: 300px;
+}
+
+.wave-line {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+}
+
+/* PHASE BLOCKS */
+.phase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
+    background-color: #fff;
+    padding: .5rem .7rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    position: absolute;
+    width: fit-content;
+}
+
+.phase h3 {
+    font-size: .85rem;
+    font-weight: 700;
+    white-space: nowrap;
+    color: #1f2937;
+}
+
+.phase p {
+    display: none;
+    font-size: .9rem;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+/* POSICIONAMENTO */
+.phase-1 {
+    top: 180px;
+    left: 5%;
+}
+
+.phase-2 {
+    top: 120px;
+    left: 40%;
+}
+
+.phase-3 {
+    top: 50px;
+    right: 5%;
+}
+
+/* ÍCONES */
+.icon {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+@media (max-width: 900px) {
+
+  .wave-line {
+    display: none;
+  }
+
+  .wave-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .phase {
+    position: relative;
+    top: unset;
+    left: unset;
+    right: unset;
+    max-width: 100%;
+  }
+
+  .header {
+    text-align: center;
+  }
+}
+
 /* ESTILOS DA SEÇÃO DESENVOLVIMENTO TÉCNICO */
 
 .box-habilidades {
