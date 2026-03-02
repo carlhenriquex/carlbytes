@@ -199,267 +199,229 @@ section {
     text-align: center;
 }
 
-/* SECTION ROADMAP */
+/* ESTILOS PARA TIMELINE */
 
-.roadmap-wave {
-    padding: 5rem 2rem;
-    position: relative;
+.timeline-section {
+    padding: 5rem 5%;
+    overflow: hidden;
 }
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    position: relative;
+.timeline-header {
+    text-align: center;
+    margin-bottom: 4rem;
 }
 
-.header {
-    text-align: left;
-    margin-bottom: 3rem;
-}
-
-.header h2 {
+.timeline-header h2 {
     font-size: 2rem;
     font-weight: 800;
     color: #1b2c5a;
 }
 
-.header p {
+.timeline-header p {
     color: #6b7280;
     margin-top: .5rem;
 }
 
-.wave-wrapper {
+.timeline-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
     position: relative;
-    min-height: 300px;
+    overflow: hidden;
 }
 
-.wave-line {
+/* fades */
+.timeline-wrapper::before, .timeline-wrapper::after {
+    content: "";
     position: absolute;
-    width: 100%;
-    height: 300px;
     top: 0;
-    left: 0;
+    width: 10rem;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .25s ease;
+    z-index: 2;
 }
 
-/* PHASE BLOCKS */
-.phase {
+.timeline-wrapper::before {
+    left: 0rem;
+    background: linear-gradient(to right, var(--background), transparent);
+}
+
+.timeline-wrapper::after {
+    right: 0rem;
+    background: linear-gradient(to left, var(--background), transparent);
+}
+
+.timeline-wrapper.show-left::before {
+    opacity: 1;
+}
+
+.timeline-wrapper.show-right::after {
+    opacity: 1;
+}
+
+/* CARROSSEL */
+.timeline-carousel {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.timeline-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.timeline-track {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .7rem;
-    background-color: #fff;
-    padding: .5rem .7rem;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    position: absolute;
-    width: fit-content;
+    gap: 5rem;
+    position: relative;
+    padding: 4rem 2rem;
+    min-width: max-content;
 }
 
-.phase h3 {
-    font-size: .85rem;
+/* Linha pontilhada */
+.timeline-track::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-top: 3px dotted var(--secondary-color);
+    transform: translateY(-50%);
+}
+
+/* ITEM */
+.timeline-item {
+    position: relative;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ponto */
+.dot {
+    width: 16px;
+    height: 16px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+/* CARD BALÃO */
+.card {
+    width: 200px;
+    height: 70px;
+    background: #fff;
+    padding: 1rem .5rem .5rem;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+}
+
+.card .box-icon {
+    padding: 10px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: #fff;
+    border: 0 8px 16px solid;
+    box-shadow:
+        0 8px 16px rgba(0,0,0,0.15),
+        inset 0 -3px rgba(102, 102, 102, 0.4);
+}
+
+.card h3 {
+    font-size: .95rem;
     font-weight: 700;
-    white-space: nowrap;
     color: #1f2937;
 }
 
-.phase p {
-    display: none;
-    font-size: .9rem;
-    color: #6b7280;
-    line-height: 1.5;
-}
-
-/* POSICIONAMENTO */
-.phase-1 {
-    top: 180px;
-    left: 5%;
-}
-
-.phase-2 {
-    top: 120px;
-    left: 40%;
-}
-
-.phase-3 {
-    top: 50px;
-    right: 5%;
-}
-
-/* ÍCONES */
-.icon {
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* =========================
-   RESPONSIVO
-========================= */
-@media (max-width: 900px) {
-
-  .wave-line {
-    display: none;
-  }
-
-  .wave-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-  }
-
-  .phase {
-    position: relative;
-    top: unset;
-    left: unset;
-    right: unset;
-    max-width: 100%;
-  }
-
-  .header {
+.timeline-item .legenda-item {
+    position: absolute;
     text-align: center;
-  }
+    left: 0%;
+    margin-top: 8rem;
 }
 
-/* ESTILOS DA SEÇÃO DESENVOLVIMENTO TÉCNICO */
-
-.box-habilidades {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    margin-inline: 7%;
-    gap: 1rem;
+.timeline-item .legenda-item .data-item {
+    color: var(--primary-color);
+    font-size: .8rem;
+    font-weight: 600;
 }
 
-.linha-temporal{
-    display: flex;
-    align-items: center;
+.timeline-item .descricao-item {
+    margin-top: 1.5rem;
+    font-size: .8rem;
+    color: #6b7280;
+
 }
 
-.lista-de-acontecimentos {
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    list-style-type: none;
+/* Alternância */
+.card.top {
+    margin-bottom: 10rem;
 }
 
-.lista-de-acontecimentos::before {
+.card.top .box-icon {
+    position: absolute;
+    top: -25px;
+}
+
+.card.bottom {
+    margin-top: 11rem;
+}
+
+/* Balão seta */
+.card.top::after {
     content: "";
     position: absolute;
-    left: 16px;
-    top: 0;
-    bottom: 0;
-    width: 1px;
-    background-color: gray;
+    bottom: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px 10px 0 10px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
 }
 
-.acontecimento {
-    position: relative;
-    margin-block: .8rem;
-    display: flex;
-
-}
-
-.pino-acontecimento {
+.card.bottom::after {
+    content: "";
     position: absolute;
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    box-shadow: 0 0 0 6px #12c38b52;
-    left: 10px;
-    top: 16px;
-    width: 12px;
-    height: 12px;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 10px 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
 }
 
-.item-acontecimento {
-    margin-left: 2.5rem;
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    align-items: center;
-    gap: 2rem;
-    position: relative;
+/* Mobile */
+@media (max-width: 768px) {
+
+    .timeline-track {
+        gap: 2rem;
+    }
+
+    .card {
+        width: 200px;
+    }
+
 }
 
-.periodo-acontecimento {
-    font-size: .85rem;
-    white-space: nowrap;
-}
+/* ESTILOS DA SESSÃO DESENVOLVIMENTO TÉCNICO */
 
-.titulo-acontecimento {
-    width: fit-content;
-    padding: 10px 14px;
-    border: 1px solid gray;
-    background-color: rgb(226, 226, 226);
-    border-radius: 14px;
-    font-weight: 900;
-    font-size: .85rem;
-    letter-spacing: .75px;
-    white-space: nowrap;
-}
-
-.titulo-acontecimento:hover {
-    background-color: var(--primary-color);
-    color: #fff;
-}
-
-.detalhes-acontecimento {
-    position: absolute;
-    left: 150px;
-    top: calc(100% + 10px);
-    width: 330px;
-    z-index: 8;
-    background-color: var(--primary-color);
-    border: 1px solid var(--secondary-color);
-    padding: 14px;
-    border-radius: 20px;
-    box-shadow: 0 22px 60px rgba(0,0,0,0.55);
-
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity .5s ease, transform .5s ease;
-}
-
-.titulo-acontecimento:hover + .detalhes-acontecimento {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.detalhes-acontecimento .titulo-detalhes {
-    font-size: .9rem;
-    font-weight: 900;
-    color: #fff;
-}
-
-.detalhes-acontecimento .texto-detalhes {
-    margin-block: .8rem;
-    color: #ffffffd2;
-    font-size: .8rem;
-}
-
-.detalhes-acontecimento .chips-detalhes {
-    display: flex;
-    gap: 8px;
-    margin-top: .9rem;
-    flex-wrap: wrap;
-}
-
-.detalhes-acontecimento .chips-detalhes .chip {
-    padding: .5rem .8rem;
-    font-weight: 800;
-    color: #fff;
-    background-color: rgba(0,0,0,0.35);
-    border: 1px solid var(--secondary-color);
-    border-radius: 25px;
-    font-size: .7rem;
-    white-space: nowrap;
-}
-
-
-
-/* ESTILOS DAS STACKS */
 
 .stacks {
     margin: 0 auto;
-    width: 100%;
+    width: 60%;
 }
 
 .stack {
