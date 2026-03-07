@@ -49,13 +49,21 @@ main {
 
 /* ESTILOS DO BANNER */
 .banner {
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     min-height: 90vh;
     background-color: #1a1a1a;
     color: #fff;
     padding-inline: 6%;
+}
+
+.sobremim {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sobremim-left, .sobremim-right {
@@ -67,6 +75,14 @@ main {
     flex-direction: column;
     justify-content: center;
     gap: 1.5rem;
+    max-width: 50%;
+}
+
+.sobremim-right {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
 }
 
 .titulo-sobremim {
@@ -80,6 +96,64 @@ main {
     background-clip: text;
     color: transparent;
     width: fit-content;
+}
+
+.tech-banner {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin-left: 2.5rem;
+}
+
+.tech-carrossel {
+    overflow: hidden;
+    position: relative;
+}
+
+.track-carrossel {
+    display: flex;
+    transition: transform .7s ease;
+}
+
+.frame-carrossel {
+    display: none;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.frame-carrossel img {
+    width: 4rem;
+}
+
+.frame-carrossel img:nth-child(2) {
+    width: 6rem;
+}
+
+.frame-carrossel.active {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: end;
+}
+
+.barras-carrossel {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.barras-carrossel .barra {
+    flex: 1;
+    height: 4px;
+    background-color: #ddd;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.progresso-bar {
+    width: 0%;
+    height: 100%;
+    background: #0fa3a3;
 }
 
 .descricao-sobremim {
@@ -137,33 +211,6 @@ main {
     background-color: transparent;
     transition: all .3s ease;
     font-size: 2rem;
-}
-
-.sobremim-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.sobremim-right .aviso {
-    width: fit-content;
-    padding: 4px 6px;
-    background-color: red;
-    border-radius: 30px;
-    appearance: none;
-    border: 1px solid rgba(255,255,255,0.12);
-    background: linear-gradient(180deg, rgba(176,22,22,0.32), rgba(176,22,22,0.18));
-    color: rgba(255,255,255,0.92);
-    padding: 16px 28px;
-    border-radius: 999px;
-    font-weight: 800;
-    letter-spacing: 0.8px;
-    box-shadow: 0 16px 40px rgba(0,0,0,0.55);
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    cursor: not-allowed;
 }
 
 /* ESTILOS DAS SEÇÕES */
@@ -366,7 +413,6 @@ section {
 
 }
 
-/* Alternância */
 .card.top {
     margin-bottom: 10rem;
 }
@@ -380,7 +426,6 @@ section {
     margin-top: 11rem;
 }
 
-/* Balão seta */
 .card.top::after {
     content: "";
     position: absolute;
@@ -418,45 +463,6 @@ section {
 
 /* ESTILOS DA SESSÃO DESENVOLVIMENTO TÉCNICO */
 
-
-.stacks {
-    margin: 0 auto;
-    width: 60%;
-}
-
-.stack {
-    margin-bottom: 1.2rem;
-    width: 100%;
-}
-
-.stack .titulo-stack {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: .5rem;
-}
-
-.stack .titulo-stack .nome-stack {
-    font-weight: 800;
-}
-
-.stack .percentual-stack {
-    font-weight: 700;
-}
-
-.stack .barra-stack {
-    height: .7rem;
-    border-radius: 20px;
-    background-color: rgb(226, 226, 226);
-    border: 1px solid gray;
-    overflow: hidden;
-}
-
-.stack .preenchimento-stack {
-    height: 100%;
-    border-radius: 20px;
-    background: linear-gradient( 90deg, var(--primary-color), var(--secondary-color));
-}
 
 /* ESTILOS DA SEÇÃO DE PROJETOS */
 
@@ -788,6 +794,10 @@ footer .box-footer .copy-footer {
         background-color: #1a1a1a;
         color: #fff;
         padding-inline: 6%;
+    }
+
+    .sobremim {
+        display: block;
     }
 
     .descricao-sobremim {
