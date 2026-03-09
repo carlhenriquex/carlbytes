@@ -58,11 +58,11 @@ main {
     background-position: right center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #000;
+    color: #1a1a1a;
     padding-inline: 6%;
 }
 
-.sobremim {
+.sobre-mim {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -70,7 +70,7 @@ main {
     gap: 1.5rem;
 }
 
-.titulo-sobremim {
+.titulo-banner {
     font-size: 2.5rem;
 }
 
@@ -141,24 +141,6 @@ main {
     background: #0fa3a3;
 }
 
-.descricao-sobremim {
-    list-style: none;
-    max-width: 600px;
-    font-size: 1rem;
-}
-
-.descricao-sobremim li{
-    display: flex;
-    align-items: top;
-    gap: .5rem;
-    margin-bottom: .7rem;
-}
-
-.descricao-sobremim i {
-    font-size: 1.4rem;
-    color: var(--primary-color);
-}
-
 .links-sobremim {
     display: flex;
     align-items: center;
@@ -166,12 +148,12 @@ main {
     margin-top: 1rem;
 }
 
-.banner .sobremim .link-curriculo {
+.banner .sobre-mim .link-curriculo {
     width: fit-content;
     background: linear-gradient(160deg, var(--primary-color) 35%, var(--secondary-color));
     padding: .7rem 1rem;
     border-radius: .5rem;
-    color: var(--white-font);
+    color: #fff;
     transition: all .3s ease;
     box-shadow: 0 8px 20px rgba(18, 195, 138, 0.3);
     display: flex;
@@ -183,12 +165,12 @@ main {
     white-space: nowrap;
 }
 
-.banner .sobremim .link-curriculo:hover {
+.banner .sobre-mim .link-curriculo:hover {
     transform: translateY(-2px);
     box-shadow: 0 12px 30px rgba(18, 195, 138, 0.4);
 }
 
-.banner .sobremim .link-github {
+.banner .sobre-mim .link-github {
     width: fit-content;
     color: #000;
     background: transparent;
@@ -196,47 +178,88 @@ main {
     font-size: 2.2rem;
 }
 
-.banner .sobremim .link-github:hover {
+.banner .sobre-mim .link-github:hover {
     transform: translateY(-2px);
 }
 
 /* ESTILOS DAS SEÇÕES */
 section {
-    padding: 5rem 0 6rem 0;
+    padding: 5rem 0 6rem;
 }
 
+/* ESTILOS PARA SOBRE MIM */
+
 .box-titulos {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5rem;
+    padding-left: 6vw;
+    margin-bottom: 2rem;
 }
 
 .box-titulos h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.box-titulos span {
     color: var(--primary-color);
-    font-weight: 800;
-    letter-spacing: 0;
+    font-size: .9rem;
+    font-weight: 500;
 }
 
-.box-titulos .titulos-underline {
-    width: 140px;
-    height: 1px;
-    margin: 1.1rem 0 1rem 0;
-    background-color: var(--primary-color);
+.box-sobremim {
+    overflow-x: auto;
+    user-select: none;
+    cursor: grab;
+    scrollbar-width: none; /* Firefox */
+    scroll-behavior: auto;
 }
 
-.box-titulos .descricao {
-    max-width: 60%;
-    text-align: center;
+.box-sobremim:active {
+    cursor: grabbing;
+}
+
+.box-sobremim::-webkit-scrollbar {
+    display: none;
+}
+
+.carrossel-sobremim {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 7%;
+}
+
+.box-sobremim .card-sobremim {
+    display: flex;
+    flex: 0 0 400px;
+    height: 440px;
+    border: 1px solid #dddddd;
+    border-radius: 20px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    gap: 16px;
+}
+
+.box-sobremim .card-sobremim:hover {
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.box-sobremim .card-sobremim img {
+    width: 350px;
+    border-radius: 20px;
+}
+
+.box-sobremim .card-sobremim .text-sobremim {
+    margin: 0 16px;
+}
+
+.box-sobremim .card-sobremim .titulo-sobremim {
+    font-size: 1.2rem;
 }
 
 /* ESTILOS PARA TIMELINE */
 
 .timeline-section {
-    padding: 5rem 5%;
     overflow: hidden;
 }
 
@@ -257,10 +280,10 @@ section {
 }
 
 .timeline-wrapper {
-    max-width: 1100px;
-    margin: 0 auto;
+    max-width: 1300px;
     position: relative;
     overflow: hidden;
+    margin-left: 80px;
 }
 
 /* fades */
@@ -268,11 +291,11 @@ section {
     content: "";
     position: absolute;
     top: 0;
-    width: 10rem;
+    width: 7rem;
     height: 100%;
     pointer-events: none;
     opacity: 0;
-    transition: opacity .25s ease;
+    transition: opacity .1s ease;
     z-index: 2;
 }
 
@@ -296,8 +319,7 @@ section {
 
 /* CARROSSEL */
 .timeline-carousel {
-    max-width: 1100px;
-    margin: 0 auto;
+    max-width: 1300px;
     overflow-x: auto;
     scrollbar-width: none;
     scroll-behavior: smooth;
@@ -644,6 +666,33 @@ section {
     border-top: 1px solid #d3d3d3;
     margin: 7%;
     padding-top: 5rem;
+}
+
+.box-header-avaliacoes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.box-header-avaliacoes h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    font-weight: 800;
+    letter-spacing: 0;
+}
+
+.box-header-avaliacoes .titulos-underline {
+    width: 140px;
+    height: 1px;
+    margin: 1.1rem 0 1rem 0;
+    background-color: var(--primary-color);
+}
+
+.box-header-avaliacoes .descricao {
+    text-align: center;
 }
 
 .box-depoimentos {
