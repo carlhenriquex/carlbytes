@@ -53,36 +53,21 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    min-height: 90vh;
-    background-color: #1a1a1a;
-    color: #fff;
+    min-height: 600px;
+    background-image: url("../assets/images/banners/banner-main.png");
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000;
     padding-inline: 6%;
 }
 
 .sobremim {
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.sobremim-left, .sobremim-right {
-    flex: 1;
-}
-
-.sobremim-left {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1.5rem;
-    max-width: 50%;
-}
-
-.sobremim-right {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: center;
 }
 
 .titulo-sobremim {
@@ -172,7 +157,6 @@ main {
 .descricao-sobremim i {
     font-size: 1.4rem;
     color: var(--primary-color);
-
 }
 
 .links-sobremim {
@@ -182,7 +166,7 @@ main {
     margin-top: 1rem;
 }
 
-.banner .sobremim-left .link-curriculo {
+.banner .sobremim .link-curriculo {
     width: fit-content;
     background: linear-gradient(160deg, var(--primary-color) 35%, var(--secondary-color));
     padding: .7rem 1rem;
@@ -199,18 +183,21 @@ main {
     white-space: nowrap;
 }
 
-.banner .sobremim-left .link-curriculo:hover {
+.banner .sobremim .link-curriculo:hover {
     transform: translateY(-2px);
     box-shadow: 0 12px 30px rgba(18, 195, 138, 0.4);
 }
 
-
-.banner .sobremim-left .link-github {
+.banner .sobremim .link-github {
     width: fit-content;
-    color: #fff;
-    background-color: transparent;
+    color: #000;
+    background: transparent;
     transition: all .3s ease;
-    font-size: 2rem;
+    font-size: 2.2rem;
+}
+
+.banner .sobremim .link-github:hover {
+    transform: translateY(-2px);
 }
 
 /* ESTILOS DAS SEÇÕES */
@@ -786,13 +773,6 @@ footer .box-footer .copy-footer {
 @media (max-width: 850px) {
     /* BANNER */
     .banner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 85vh;
-        background-color: #1a1a1a;
-        color: #fff;
         padding-inline: 6%;
     }
 
