@@ -74,7 +74,7 @@ main {
     font-size: 2.5rem;
 }
 
-.titulo-sobremim span {
+.titulo-banner span {
     background: linear-gradient(160deg, var(--primary-color) 35%, var(--secondary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -205,7 +205,14 @@ section {
     font-weight: 500;
 }
 
-.box-sobremim {
+/* .box-sobremim {
+} */
+
+.carrossel-sobremim {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 7%;
+
     overflow-x: auto;
     user-select: none;
     cursor: grab;
@@ -213,18 +220,13 @@ section {
     scroll-behavior: auto;
 }
 
-.box-sobremim:active {
+
+.carrossel-sobremim:active {
     cursor: grabbing;
 }
 
-.box-sobremim::-webkit-scrollbar {
+.carrossel-sobremim::-webkit-scrollbar {
     display: none;
-}
-
-.carrossel-sobremim {
-    display: flex;
-    gap: 1rem;
-    padding: 1rem 7%;
 }
 
 .box-sobremim .card-sobremim {
@@ -247,6 +249,8 @@ section {
 .box-sobremim .card-sobremim img {
     width: 350px;
     border-radius: 20px;
+    pointer-events: none;
+    -webkit-user-drag: none;
 }
 
 .box-sobremim .card-sobremim .text-sobremim {
@@ -321,8 +325,16 @@ section {
 .timeline-carousel {
     max-width: 1300px;
     overflow-x: auto;
+
+    user-select: none;
+    cursor: grab;
     scrollbar-width: none;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
+
+}
+
+.timeline-carousel:active {
+    cursor: grabbing;
 }
 
 .timeline-carousel::-webkit-scrollbar {
@@ -515,6 +527,7 @@ section {
     cursor: grab;
     scrollbar-width: none; /* Firefox */
     scroll-behavior: auto;
+
 }
 
 .carousel-projetos:active {

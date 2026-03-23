@@ -448,65 +448,7 @@
     </footer>
 
     <script src="src/techs.js"></script>
-    <script src="src/timeline.js"></script>
-
-    <script>
-
-        const slider = document.querySelector('.carousel-projetos');
-
-        let isDown = false;
-        let isDragging = false;
-        let startX;
-        let scrollLeft;
-        const dragThreshold = 6; // pixels mínimos pra virar arrasto
-
-        slider.addEventListener('mousedown', e => {
-        isDown = true;
-        isDragging = false;
-        startX = e.pageX;
-        scrollLeft = slider.scrollLeft;
-        slider.style.cursor = 'grabbing';
-        document.body.style.userSelect = 'none';
-        });
-
-        slider.addEventListener('mousemove', e => {
-        if (!isDown) return;
-
-        const delta = e.pageX - startX;
-
-        // virou arrasto real
-        if (Math.abs(delta) > dragThreshold) {
-            isDragging = true;
-        }
-
-        e.preventDefault();
-        slider.scrollLeft = scrollLeft - delta * 1.2;
-        });
-
-        slider.addEventListener('mouseup', () => {
-        isDown = false;
-        slider.style.cursor = 'grab';
-        document.body.style.userSelect = '';
-        });
-
-        slider.addEventListener('mouseleave', () => {
-        isDown = false;
-        slider.style.cursor = 'grab';
-        document.body.style.userSelect = '';
-        });
-
-        // BLOQUEIO DE CLIQUE NOS LINKS
-        slider.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', e => {
-            if (isDragging) {
-            e.preventDefault();
-            e.stopPropagation();
-            }
-        });
-        });
-
-        slider.style.cursor = 'grab';
-    </script>
+    <script src="src/carrosseis.js"></script>
     
 </body>
 </html>
