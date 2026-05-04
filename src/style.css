@@ -284,7 +284,7 @@ section {
 }
 
 .timeline-wrapper {
-    max-width: 1300px;
+    max-width: 90vw;
     position: relative;
     overflow: hidden;
     margin-left: 80px;
@@ -323,7 +323,7 @@ section {
 
 /* CARROSSEL */
 .timeline-carousel {
-    max-width: 1300px;
+    width: 100%;
     overflow-x: auto;
 
     user-select: none;
@@ -617,7 +617,7 @@ section {
 
 .certificados .box-certificados {
     width: 85vw;
-    height: 250px;
+    height: fit-content;
     background-color: #ffffff;
     margin: 0 auto;
     border-radius: 10px;
@@ -633,7 +633,6 @@ section {
 }
 
 .certificados .box-certificados .box-inferior {
-    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -650,7 +649,11 @@ section {
     width: 80px; 
 }
 
-.certificados .box-certificados .box-inferior .empresas-certificados img:nth-child(2) {
+.certificados .box-certificados .box-inferior .empresas-certificados .img2 {
+    width: 110px; 
+}
+
+.certificados .box-certificados .box-inferior .empresas-certificados .img3 {
     width: 110px; 
 }
 
@@ -872,7 +875,7 @@ footer .box-footer .copy-footer {
     .certificados .box-certificados .subtitulo-certificados {
         font-size: .9rem;
     }
-
+/*
     .certificados .box-certificados .box-inferior .empresas-certificados img {
         width: 60px; 
     }
@@ -880,7 +883,7 @@ footer .box-footer .copy-footer {
     .certificados .box-certificados .box-inferior .empresas-certificados img:nth-child(2) {
         width: 80px; 
     }
-
+*/
     .certificados .box-certificados .box-inferior .button {
         padding: 9px 18px;
         font-size: .9rem;
