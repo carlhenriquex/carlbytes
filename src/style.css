@@ -38,6 +38,10 @@ header .menu .nav-link {
     transition: .3s ease;
 }
 
+header .menu .nav-link.active {
+    color: var(--primary-color);
+}
+
 header .menu .nav-link:hover {
     transform: translateY(-2px);
 }
@@ -184,7 +188,7 @@ main {
 
 /* ESTILOS DAS SEÇÕES */
 section {
-    padding: 5rem 0 3rem;
+    padding: 5rem 0 5rem;
 }
 
 /* ESTILOS PARA SOBRE MIM */
@@ -287,7 +291,7 @@ section {
     max-width: 90vw;
     position: relative;
     overflow: hidden;
-    margin-left: 80px;
+    margin-left: 7%;
 }
 
 /* fades */
@@ -527,7 +531,6 @@ section {
     cursor: grab;
     scrollbar-width: none; /* Firefox */
     scroll-behavior: auto;
-
 }
 
 .carousel-projetos:active {
@@ -642,6 +645,7 @@ section {
 .certificados .box-certificados .box-inferior .empresas-certificados {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1.5rem; 
 }
 
@@ -664,6 +668,7 @@ section {
     border-radius: 50px;
     font-weight: 700;
     letter-spacing: .1px;
+    white-space: nowrap;
     font-size: 1rem;
     transition: all ease .3s;
 }
@@ -681,7 +686,7 @@ section {
 .box-avaliacoes {
     border-top: 1px solid #d3d3d3;
     margin: 7%;
-    padding-top: 5rem;
+    padding-top: 2rem;
 }
 
 .box-header-avaliacoes {
@@ -852,7 +857,6 @@ footer .box-footer .copy-footer {
 
     .links-sobremim {
         display: flex;
-        justify-content: center;
         align-items: center;
         gap: .8rem;
         margin-top: 2rem;
@@ -875,7 +879,7 @@ footer .box-footer .copy-footer {
     .certificados .box-certificados .subtitulo-certificados {
         font-size: .9rem;
     }
-/*
+
     .certificados .box-certificados .box-inferior .empresas-certificados img {
         width: 60px; 
     }
@@ -883,7 +887,7 @@ footer .box-footer .copy-footer {
     .certificados .box-certificados .box-inferior .empresas-certificados img:nth-child(2) {
         width: 80px; 
     }
-*/
+
     .certificados .box-certificados .box-inferior .button {
         padding: 9px 18px;
         font-size: .9rem;
