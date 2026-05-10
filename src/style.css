@@ -86,6 +86,7 @@ header .mobile-menu ul li {
 
 header .mobile-menu ul li .nav-mobile{
     color: #fff;
+    font-size: 1.1rem;
 }
 
 header .mobile-menu.open {
