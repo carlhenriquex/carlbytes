@@ -4,7 +4,7 @@ const barras = document.querySelectorAll(".barra");
 const progressos = document.querySelectorAll(".progresso-bar");
 
 let index = 0;
-let duration = 4200;
+let duration = 2800;
 
 let start = null;
 let pauseStart = null;
