@@ -124,7 +124,6 @@ main {
 
 .slide img {
     width: 100%;
-    height: 600px;
     object-fit: contain;
     display: block;
 }
@@ -778,19 +777,6 @@ footer .box-footer .copy-footer {
 @media (max-width: 1024px) {
 
     /* GERAL */
-    .banner h1, .box-titulos h1, .cabecalho-projetos .titulo-projetos {
-        font-size: 2rem;
-    }
-
-    /* BANNER */
-
-    .descricao-sobremim {
-        font-size: .9rem;
-    }
-
-    .banner .sobremim-left .link-curriculo {
-        font-size: 1rem;
-    }
     
     /* DESENVOLVIMENTO TÉCNICO */
     .box-habilidades {
@@ -818,25 +804,6 @@ footer .box-footer .copy-footer {
     }
 
     /* BANNER */
-    .banner {
-        padding-inline: 6%;
-    }
-
-    .sobremim {
-        display: block;
-    }
-
-    .descricao-sobremim {
-        max-width: 100%;
-        font-size: .9rem;
-    }
-
-    .links-sobremim {
-        display: flex;
-        align-items: center;
-        gap: .8rem;
-        margin-top: 2rem;
-    }
 
     /* PROJETOS */
     .projetos .box-projetos {
