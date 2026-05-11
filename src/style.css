@@ -101,136 +101,55 @@ main {
 /* ESTILOS DO BANNER */
 .banner {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    min-height: 600px;
-    background-image: url("../assets/images/banners/banner-main.png");
-    background-position: right center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #1a1a1a;
-    padding-inline: 6%;
+    padding: 52px 0 0;
 }
 
-.sobre-mim {
+
+.carousel {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1.5rem;
-}
-
-.titulo-banner {
-    font-size: 2.5rem;
-}
-
-.titulo-banner span {
-    background: linear-gradient(160deg, var(--primary-color) 35%, var(--secondary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    width: fit-content;
-}
-
-.tech-banner {
-    width: 100%;
-    max-width: 300px;
-    text-align: center;
-    margin-left: 2.5rem;
-}
-
-.tech-carrossel {
     overflow: hidden;
     position: relative;
 }
 
-.track-carrossel {
+.slides {
     display: flex;
-    transition: transform .7s ease;
+    transition: transform 1s ease-in-out;
 }
 
-.frame-carrossel {
-    display: none;
-    width: 100%;
-    margin-bottom: 24px;
-}
-
-.frame-carrossel img {
-    width: 4rem;
-}
-
-.frame-carrossel img:nth-child(2) {
-    width: 6rem;
-}
-
-.frame-carrossel.active {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    align-items: end;
-}
-
-.barras-carrossel {
-    display: flex;
-    gap: 8px;
-    margin-top: 12px;
-}
-
-.barras-carrossel .barra {
-    flex: 1;
-    height: 4px;
-    background-color: #ddd;
+.slide {
+    min-width: 100%;
+    aspect-ratio: 16 / 6;
     overflow: hidden;
-    border-radius: 4px;
 }
 
-.progresso-bar {
-    width: 0%;
-    height: 100%;
-    background: #0fa3a3;
+.slide img {
+    width: 100%;
+    height: 600px;
+    object-fit: contain;
+    display: block;
 }
 
-.links-sobremim {
-    display: flex;
-    align-items: center;
-    gap: .8rem;
-    margin-top: 1rem;
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+
+    background: rgba(0,0,0,.5);
+    color: white;
 }
 
-.banner .sobre-mim .link-curriculo {
-    width: fit-content;
-    background: linear-gradient(160deg, var(--primary-color) 35%, var(--secondary-color));
-    padding: .7rem 1rem;
-    border-radius: .5rem;
-    color: #fff;
-    transition: all .3s ease;
-    box-shadow: 0 8px 20px rgba(18, 195, 138, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
-    font-size: 1.1rem;
-    font-weight: 700;
-    white-space: nowrap;
+.prev {
+    left: 10px;
 }
 
-.banner .sobre-mim .link-curriculo:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 30px rgba(18, 195, 138, 0.4);
-}
-
-.banner .sobre-mim .link-github {
-    width: fit-content;
-    color: #000;
-    background: transparent;
-    transition: all .3s ease;
-    font-size: 2.2rem;
-}
-
-.banner .sobre-mim .link-github:hover {
-    transform: translateY(-2px);
+.next {
+    right: 10px;
 }
 
 /* ESTILOS DAS SEÇÕES */
@@ -283,7 +202,7 @@ section {
 .box-sobremim .card-sobremim {
     display: flex;
     flex: 0 0 400px;
-    height: 440px;
+    height: 460px;
     border: 1px solid #dddddd;
     border-radius: 20px;
     box-shadow: 0 0 2px rgba(0,0,0,0.2);
@@ -309,7 +228,8 @@ section {
 }
 
 .box-sobremim .card-sobremim .titulo-sobremim {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 /* ESTILOS PARA TIMELINE */
