@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,468 +21,65 @@
 </head>
 <body>
     <header>
-        <div class="box-header">
-            <a class="logo" href="#">
-                CARL<span>BYTES.</span>
-            </a>
-            <nav class="menu">
-                <a href="#home" class="nav-link">Início</a>
-                <a href="#timeline" class="nav-link">Formações</a>
-                <a href="#projetos" class="nav-link">Projetos</a>
-                <a href="#certificados" class="nav-link">Certificados</a>
-                <a href="#avaliacoes" class="nav-link">Avaliações</a>
-                <a href="#contatos" class="nav-link">Contatos</a>
-            </nav>
-
-            <div class="icon-menu-mobile">
-                <button onclick="menuShow()"><i class="bi bi-three-dots-vertical"></i></button>
-            </div>
-
-            <div class="mobile-menu">
-                <ul>
-                    <li><a href="#home" class="nav-mobile">Início</a></li>
-                    <li><a href="#timeline" class="nav-mobile">Formações</a></li>
-                    <li><a href="#projetos" class="nav-mobile">Projetos</a></li>
-                    <li><a href="#certificados" class="nav-mobile">Certificados</a></li>
-                    <li><a href="#avaliacoes" class="nav-mobile">Avaliações</a></li>
-                    <li><a href="#contatos" class="nav-mobile">Contatos</a></li>
-                </ul>
-            </div>
-        </div>
+        <h1>Carl Bytes</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="experiencias.html">Experiências</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="habilidades.html">Habilidades</a>
+            <a href="certificados.html">Certificados</a>
+        </nav>
     </header>
 
     <main>
-        <section class="banner" id="home">
-            <div class="carousel">
-
-                <div class="slides">
-
-                    <div class="slide">
-                        <img src="assets/images/banners/banner1.png" alt="">
-                    </div>
-
-                    <div class="slide">
-                        <img src="assets/images/banners/banner2.png" alt="">
-                    </div>
-
-                    <div class="slide">
-                        <img src="assets/images/banners/banner3.png" alt="">
-                    </div>
-
-                </div>
-
-                <button class="prev">‹</button>
-                <button class="next">›</button>
-            </div>
-
-        </section>
-
-        <!--
-            <section class="sobremim" id="sobremim">
-                <div class="box-titulos">
-                    <span>SOBRE MIM</span>
-                    <h1>Conheça o meu trabalho</h1>
+        <div class="banner">
+            <div class="box-texto">
+                <span>Olá, eu sou</span>
+                <h1 class="titulo">Carl</h1>
+                <h1 class="titulo">Henrique</h1>
+                <div class="formacoes">
+                    <p>DevOps Engineer</p>
+                    <p>Docente</p>
+                    <p>Graduando Ciência da Computação</p>
                 </div>
     
-                <div class="box-sobremim">
-                    <div class="carrossel-sobremim">
-    
-                        <div class="card-sobremim">
-                            <img src="assets/images/banners/banner-web.png" alt="">
-                            <div class="text-sobremim">
-                                <h3 class="titulo-sobremim">
-                                    Olá, meu chamo Carlos, sou apaixonado por tecnologia desde que me entendo por gente,
-                                    sempre fui fascinado por problemas lógicos, matemática, jogos de estratégia, computação e sistemas.
-                                </h3>
-                            </div>   
-                        </div>
-    
-                        <div class="card-sobremim">
-                            <img src="assets/images/banners/banner-web.png" alt="">
-                            <div class="text-sobremim">
-                                <h3 class="titulo-sobremim">
-                                    A pouco mais de 2 anos resolvi transformar esse meu amor por tecnologia em minha carreira profissional,
-                                    migrando da minha antiga área de construção civil para programação, onde me encontrei de verdade, tenho crescido bastante.
-                                </h3>
-                            </div>
-                        </div>
-    
-                        <div class="card-sobremim">
-                            <img src="assets/images/banners/banner-web.png" alt="">
-                            <div class="text-sobremim">
-                                <h3 class="titulo-sobremim">
-                                    Como profissional valorizo lealdade, proatividade e melhoria contínua,
-                                    sempre procurando como posso otimizar os meus processos e responsabilidades.
-                                </h3>
-                            </div>
-                        </div>
-    
-                        <div class="card-sobremim">
-                            <img src="assets/images/banners/banner-web.png" alt="">
-                            <div class="text-sobremim">
-                                <h3 class="titulo-sobremim">
-                                    Atualmente, estou com minha graduação em Ciência da Computação em andamento,
-                                    para consolidar meus conhecimentos e hoje busco minha primeira oportunidade
-                                    de atuar profissionalmente na área de TI, e poder demonstrar todo o meu potencial e dedicação.
-                                </h3>
-                            </div>
-                        </div>
-    
-                        <div class="card-sobremim">
-                            <img src="assets/images/banners/banner-web.png" alt="">
-                            <div class="text-sobremim">
-                                <h3 class="titulo-sobremim">
-                                    Atuação em design gráfico, web design e criação de interfaces focadas em experiência do usuário.
-                                </h3>
-                            </div>
-                        </div>
-                        
+                <div class="ferramentas">
+                    <div class="ferramenta">
+                        <p>Linux</p>
                     </div>
-                </div>
-    
-            </section>   
-        -->
-
-        <section class="timeline-section" id="timeline">
-
-            <div class="box-titulos">
-                <span>LINHA DO TEMPO</span>
-                <h1>Marcos importantes das minhas formações acadêmicas.</h1>
-            </div>
-
-            <div class="timeline-wrapper">
-
-                <div class="timeline-carousel">
-    
-                    <div class="timeline-track">
-    
-                        <div class="timeline-item">
-                            <div class="card top">
-                                <div class="box-icon">
-                                    <i class="bi bi-code-slash"></i>
-                                </div>
-                                <h3>Desenv. de Sistemas</h3>
-                            </div>
-                            <span class="dot"></span>
-                            <div class="legenda-item">
-                                <span class="data-item">
-                                    2024 - 2025
-                                </span>
-                                <p class="descricao-item bottom">Consolidação de fundamentos: lógica de programação, web (HTML/CSS) e introdução a JavaScript e bancos de dados.</p>
-                            </div>
-                        </div>
-    
-                        <div class="timeline-item">
-                            <div class="card top">
-                                <div class="box-icon">
-                                    <i class="bi bi-palette"></i>
-                                </div>
-                                <h3>Design Gráfico</h3>
-                            </div>
-                            <span class="dot"></span>
-                            <div class="legenda-item">
-                                <span class="data-item">
-                                    fev/2025 - atual
-                                </span>
-                                <p class="descricao-item">Base forte em identidade visual, tipografia e composição. Essa formação influenciou meu cuidado com UI, consistência visual e experiência do usuário em projetos web.</p>
-                            </div>
-                        </div>
-    
-                        <div class="timeline-item">
-                            <div class="card top">
-                                <div class="box-icon">
-                                    <i class="bi bi-award"></i>
-                                </div>
-                                <h3>BFD Python - Softex</h3>
-                            </div>
-                            <span class="dot"></span>
-                            <div class="legenda-item">
-                                <span class="data-item">
-                                    ago/2025 - jan/2026
-                                </span>
-                                <p class="descricao-item">Programa de formação com foco em desenvolvimento backend utilizando Python. Atuação prática com Programação Orientada a Objetos, Django, ORM, padrão MTV e desenvolvimento de APIs, aplicando conceitos diretamente em projetos e simulando demandas reais do mercado.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <div class="card top">
-                                <div class="box-icon">
-                                    <i class="bi bi-mortarboard-fill"></i>
-                                </div>
-                                <h3>Bachar. em Ciência da Computação</h3>
-                            </div>
-                            <span class="dot"></span>
-                            <div class="legenda-item">
-                                <span class="data-item">
-                                    set/2025 - atual
-                                </span>
-                                <p class="descricao-item">Formação superior com foco em lógica computacional, estruturas de dados, programação em C e fundamentos da computação. O curso consolida minha base teórica e analítica, sustentando decisões técnicas mais sólidas no desenvolvimento de software.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="card top">
-                                <div class="box-icon">
-                                    <i class="bi bi-gear-fill"></i>
-                                </div>
-                                <h3>Cibersegurança - FAST</h3>
-                            </div>
-                            <span class="dot"></span>
-                            <div class="legenda-item">
-                                <span class="data-item">
-                                    set/2025 - nov/2025
-                                </span>
-                                <p class="descricao-item">Formação em cibersegurança com foco em segurança da informação, proteção de sistemas e redes, análise de vulnerabilidades e aplicação de boas práticas para mitigação de riscos e defesa contra ameaças digitais.</p>
-                            </div>
-                        </div>
-
-                        <!-- <div class="timeline-item">
-                            <div class="card top">
-                                <div class="box-icon">
-                                    <i class="bi bi-gear-fill"></i>
-                                </div>
-                                <h3>Mecatrônica</h3>
-                            </div>
-                            <span class="dot"></span>
-                            <div class="legenda-item">
-                                <span class="data-item">
-                                    fev/2026 - atual
-                                </span>
-                                <p class="descricao-item">Formação técnica interdisciplinar com foco na integração entre mecânica, eletrônica e programação, abordando automação, sistemas embarcados e fundamentos de robótica aplicados a soluções industriais.</p>
-                            </div>
-                        </div> -->
-
-                        <div class="timeline-item">
-                            <div class="card top">
-                                <div class="box-icon">
-                                    <i class="bi bi-translate"></i>
-                                </div>
-                                <h3>Inglês Básico 3 - NEL</h3>
-                            </div>
-                            <span class="dot"></span>
-                            <div class="legenda-item">
-                                <span class="data-item">
-                                    jan/2026 - atual
-                                </span>
-                                <p class="descricao-item">Curso de consolidação do nível básico com foco em comunicação prática, ampliação de vocabulário e compreensão oral e escrita.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="card top">
-                                <div class="box-icon">
-                                    <i class="bi bi-code-slash"></i>
-                                </div>
-                                <h3>Dev Front-end - SENAC/SERASA</h3>
-                            </div>
-                            <span class="dot"></span>
-                            <div class="legenda-item">
-                                <span class="data-item">
-                                    mai/2026 - atual
-                                </span>
-                                <p class="descricao-item">Bolsa de estudos profissionalizante com foco em front-end com HTML, CSS e JS, além de frameworks modernos como REACT.</p>
-                            </div>
-                        </div>
-    
+                    <div class="ferramenta">
+                        <p>Terraform</p>
                     </div>
-    
-                </div>
-
-            </div>
-
-
-        </section>
-
-        <section class="projetos" id="projetos">
-
-            <div class="box-projetos">
-                <div class="cabecalho-projetos">
-                    <h1 class="titulo-projetos">Meu portfólio de projetos</h1>
-                    <p class="subtitulo-projetos">Projetos que desenvolvidos ao longo das minhas formações. Aqui aplico conceitos de desenvolvimento web, backend, lógica de programação e versionamento com Git, priorizando código limpo, organização e escalabilidade.</p>
-                </div>
-
-                <div class="carousel-projetos">
-
-                    <a class="item-projeto" href="https://projetoinclusaodigital.com" target="_blank">
-                        <div class="img-wrap">
-                            <img src="assets/images/banners/inclusao-digital-banner.jpg" alt="">
-
-                            <div class="overlay-texto">
-                                <h4>Inclusão Digital</h4>
-                                <span>HTML • CSS • JavaScript</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://github.com/carlhenriquex/chamada-escolar" class="item-projeto" target="_blank">
-                        <div class="img-wrap">
-                            <img src="assets/images/banners/chamada-escolar-banner.jpg" alt="">
-
-                            <div class="overlay-texto">
-                                <h4>Chamada Escolar</h4>
-                                <span>PHP • JavaScript • MySQL</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="item-projeto" href="https://github.com/limaamorim/ProjetoIntegradorBackend" target="_blank">
-                        <div class="img-wrap">
-                            <img src="assets/images/banners/api-laudos-banner.jpg" alt="">
-
-                            <div class="overlay-texto">
-                                <h4>API de laudos</h4>
-                                <span>Python • Django • SQlite</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://github.com/carlhenriquex/paisconectapi" class="item-projeto" target="_blank">
-                        <div class="img-wrap">
-                            <img src="assets/images/banners/pais-connect-banner.jpg" alt="">
-
-                            <div class="overlay-texto">
-                                <h4>Pais Connect</h4>
-                                <span>Python • Flask • MySQL</span>
-                            </div>
-                        </div>
-                    </a>
+                    <div class="ferramenta">
+                        <p>Docker</p>
+                    </div>
+                    <div class="ferramenta">
+                        <p>Kubernetes</p>
+                    </div>
+                    <div class="ferramenta">
+                        <p>AWS</p>
+                    </div>
                 </div>
             </div>
-
-        </section>
-
-        <section class="certificados" id="certificados">
-
-            <div class="box-certificados">
-                <h2 class="titulo-certificados">Minhas certificações</h2>
-                <p class="subtitulo-certificados">Reconhecimentos oficiais e formações complementares nas áreas de back-end, cibersegurança, design e entre outros.</p>
-                <div class="box-inferior">
-                    <div class="empresas-certificados">
-                        <a href="https://www.cesar.school/" title="Cesar School">
-                            <img src="assets/images/logos/cesar-logo.svg" alt="Logo da Cesar">
-                        </a>
-                        <a href="https://www.serasaexperian.com.br/transforme-se/" title="SERASA TRANSFORME-SE">
-                            <img class="img3" src="assets/images/logos/serasa-experian-logo.png" alt="Logo do Serasa Experian">
-                        </a>
-                        <a href="https://aponti.org.br/" title="Aponti">
-                            <img class="img2" src="assets/images/logos/softex-logo.svg" alt="Logo da Softex">
-                        </a>
-                        <a href="https://www.pe.senai.br/" title="SENAI">
-                            <img class="img3" src="assets/images/logos/senai-logo.svg" alt="Logo do SENAI">
-                        </a>
-                        <a href="https://www.dio.me/" title="Digital Innovation One (DIO)">
-                            <img src="https://assets.dio.me/VTgUqMiPAIgvsFdSvgSnVAB5lrqnNxY_N8h8LknnQys/f:webp/q:80/w:120/L2Fzc2V0cy9kaW9tZS9sb2dvLWZ1bGwuc3Zn" alt="logo dio">
-                        </a>
-                    </div>
-                    <a class="button" href="assets/pages/certificados.html">Ver certificados</a>
-                </div>
+            <div class="box-imagem">
             </div>
-
-        </section>
-
-        <section class="avaliacoes" id="avaliacoes">
-
-            <div class="box-avaliacoes">
-
-                <div class="box-header-avaliacoes">
-                    <h1>Clientes e avaliações</h1>
-                    <div class="titulos-underline" aria-hidden="true"></div>
-                    <p class="descricao">Feedbacks reais de clientes que tiveram suas ideias transformadas em soluções digitais.</p>
-                </div>
-
-                <div class="box-depoimentos">
-                    <div class="depoimento">
-                        <div class="icon-depoimento">
-                            <i class="bi bi-quote"></i>
-                        </div>
-                        <p class="texto-depoimento">
-                            No projeto da FACEPE (Compet Médio-TEC), intitulado “Aplicabilidade de Ferramentas Digitais”, com a participação da ETEPAC, cuja coordenação esteve sob minha responsabilidade, Sônia Maria de Pádua, foram desenvolvidas diversas atividades, entre elas a criação de um site que apresentasse todo o processo de desenvolvimento do projeto.
-
-                            O aluno que participou ativamente dessa elaboração foi Carlos Henrique. Todo o processo de construção foi conduzido de forma clara e objetiva.
-                            
-                            O site apresentou um excelente resultado, com clareza nas informações, navegação intuitiva e fácil acesso aos conteúdos de interesse. Os temas foram estruturados de forma lógica, favorecendo a busca de informações e despertando o interesse de quem o acessa.
-
-                            O site foi entregue dentro do prazo previsto. A equipe demonstrou responsabilidade ao cumprir o cronograma estabelecido, deixando a coordenação do projeto satisfeita e orgulhosa em apresentar o trabalho à ETEPAC e ao órgão fomentador.
-                        </p>
-                        <div class="legenda-depoimento">
-                            <h4 class="nome-depoimento">
-                                Sônia Pádua
-                            </h4>
-                            <span class="badge-depoimento">
-                                Coordenadora de projetos da ETEPAC
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="depoimento" style="display: none;">
-                        <div class="icon-depoimento">
-                            <i class="bi bi-quote"></i>
-                        </div>
-                        <p class="texto-depoimento">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, neque. Quas, aliquid ratione vel exercitationem, quam nostrum alias dolores delectus perspiciatis voluptates voluptas eius quibusdam, nam ullam iste corporis facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptate, aperiam perspiciatis enim nihil facere sunt explicabo maiores possimus neque cumque dolores odio quae! Minima, qui. Enim, maiores? Magni, itaque!
-                        </p>
-                        <div class="legenda-depoimento">
-                            <h4 class="nome-depoimento">
-                                Lorem ipsum
-                            </h4>
-                            <span class="badge-depoimento">
-                                Descrição sobre o autor
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="depoimento" style="display: none;">
-                        <div class="icon-depoimento">
-                            <i class="bi bi-quote"></i>
-                        </div>
-                        <p class="texto-depoimento">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis fuga, itaque esse ratione dolorem id quod amet corporis culpa animi molestiae fugiat eum asperiores distinctio voluptas labore ad? Odio, esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, soluta obcaecati maiores totam enim laboriosam adipisci quisquam veniam provident placeat quibusdam voluptatum distinctio recusandae dolor iste id ad porro laudantium?
-                        </p>
-                        <div class="legenda-depoimento">
-                            <h4 class="nome-depoimento">
-                                Lorem ipsum
-                            </h4>
-                            <span class="badge-depoimento">
-                                Descrição sobre o autor
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
+        </div>
+        <div class="redes-sociais">
+            <a href="#">
+                <i class="bi bi-github"></i>
+                <p>https://github.com/carlhenriquex</p>
+            </a>
+            <a href="#">
+                <i class="bi bi-linkedin"></i>
+                <p>https://github.com/carlhenriquex</p>
+            </a>
+            <a href="#">
+                <i class="bi bi-envelope-fill"></i>
+                <p>https://github.com/carlhenriquex</p>
+            </a>
+        </div>
     </main>
 
-    <footer id="contatos">
-        <div class="divisor-footer" aria-hidden="true"></div>
-
-        <div class="box-footer">
-
-            <div class="titulo-footer">CARLBYTES</div>
-        
-            <div class="midias-sociais">
-                <a href="mailto:carlhenriquedev@gmail.com?subject=Contato%20via%20site&amp;body=Olá,%20vi%20seu%20portfólio..." class="btn-midias-sociais" target="_blank" title="Envie-me um e-mail">
-                    <i class="bi bi-envelope-at-fill"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/carloshenriquex" class="btn-midias-sociais" target="_blank" title="LinkedIn">
-                    <i class="bi bi-linkedin"></i>
-                </a>
-                <a href="https://wa.me/81982270753?text=Olá,%20vi%20seu%20portfólio..." class="btn-midias-sociais" target="_blank" title="WhatsApp">
-                    <i class="bi bi-whatsapp"></i>
-                </a>
-            </div>
-
-            <div class="copy-footer">© 2026 Carl Henrique developer.</div>
-        </div>
-
-    </footer>
-
-    <script src="src/banner.js"></script>
-    <script src="src/menuShow.js"></script>
-    <script src="src/navbar.js"></script>
-    <script src="src/carrosseis.js"></script>
-    <script src="src/techs.js"></script>
-    
-    
+    <footer></footer>  
 </body>
 </html>
