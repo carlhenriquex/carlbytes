@@ -1,0 +1,38 @@
+.grid {
+    position: absolute;
+    width: 650px;
+    height: 700px;
+    left: 46%;
+    top: 40px;
+    opacity: .25;
+    background-image:
+        linear-gradient(
+            rgba(54, 131, 255, .2) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(54, 131, 255, .2) 1px,
+            transparent 1px
+        );
+    background-size: 38px 38px;
+    mask-image:
+        linear-gradient(
+            to bottom,
+            transparent,
+            black 20%,
+            black 80%,
+            transparent
+        );
+    z-index: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.banner {
+    width: 100%;
+}
