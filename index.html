@@ -30,38 +30,83 @@
             <a href="certificados.html">Certificados</a>
         </nav>
     </header>
-
+ 
     <main>
+        <div class="grid"></div>
         <div class="banner">
-            <div class="box-texto">
-                <span>Olá, eu sou</span>
-                <h1 class="titulo">Carl</h1>
-                <h1 class="titulo">Henrique</h1>
-                <div class="formacoes">
-                    <p>DevOps Engineer</p>
-                    <p>Docente</p>
-                    <p>Graduando Ciência da Computação</p>
+            <div class="box-main">
+                <div class="box-texto">
+                    <div class="terminal-mini">
+                        <span class="green">$</span>
+                        <span>whoami</span>
+        
+                        <strong>carlhenriquex<span class="cursor">_</span></strong>
+                    </div>
+                    <span>Olá, eu sou</span>
+                    <h1 class="titulo">Carl <span>Henrique</span></h1>
+                    <div class="formacoes">
+                        <p>DevOps Engineer</p>
+                        <p>Docente</p>
+                        <p>Graduando Ciência da Computação</p>
+                    </div>
+        
+                    <div class="ferramentas">
+                        <div class="ferramenta">
+                            <p>Linux</p>
+                        </div>
+                        <div class="ferramenta">
+                            <p>Terraform</p>
+                        </div>
+                        <div class="ferramenta">
+                            <p>Docker</p>
+                        </div>
+                        <div class="ferramenta">
+                            <p>Kubernetes</p>
+                        </div>
+                        <div class="ferramenta">
+                            <p>AWS</p>
+                        </div>
+                    </div>
                 </div>
-    
-                <div class="ferramentas">
-                    <div class="ferramenta">
-                        <p>Linux</p>
+                <div class="box-imagem">
+                    <!-- TERMINAL SUPERIOR -->
+                    <div class="terminal-card terminal-top">
+
+                        <div class="window-header">
+                            <span class="red-bola"></span>
+                            <span class="yellow-bola"></span>
+                            <span class="green-bola"></span>
+                        </div>
+
+                        <div class="terminal-content">
+                            <p><span class="green">$</span>deploy.sh</p>
+                            <p>&gt; build</p>
+                            <p>&gt; test</p>
+                            <p>&gt; deploy</p>
+                            <p class="success">&gt; success ✓</p>
+                        </div>
                     </div>
-                    <div class="ferramenta">
-                        <p>Terraform</p>
-                    </div>
-                    <div class="ferramenta">
-                        <p>Docker</p>
-                    </div>
-                    <div class="ferramenta">
-                        <p>Kubernetes</p>
-                    </div>
-                    <div class="ferramenta">
-                        <p>AWS</p>
+
+                    <!-- TERMINAL INFERIOR -->
+                    <div class="terminal-card terminal-bottom">
+                        <div class="window-header">
+                            <span class="red-bola"></span>
+                            <span class="yellow-bola"></span>
+                            <span class="green-bola"></span>
+                        </div>
+                        <div class="terminal">
+                            <p>1  name: Deploy App</p>
+                            <p>2  on: [push]</p>
+                            <p>3</p>
+                            <p>4  jobs:</p>
+                            <p>5    build:</p>
+                            <p>6      runs-on: ubuntu-latest</p>
+                            <p>7 steps:</p>
+                            <p>8        - uses: actions/checkout@v4</p>
+                            <p>9        - uses: docker/build-push-action</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="box-imagem">
             </div>
         </div>
         <div class="redes-sociais">
@@ -71,11 +116,11 @@
             </a>
             <a href="#">
                 <i class="bi bi-linkedin"></i>
-                <p>https://github.com/carlhenriquex</p>
+                <p>https://www.linkedin.com/in/carlhenriquex</p>
             </a>
             <a href="#">
                 <i class="bi bi-envelope-fill"></i>
-                <p>https://github.com/carlhenriquex</p>
+                <p>carlhenriquex@gmail.com</p>
             </a>
         </div>
     </main>
