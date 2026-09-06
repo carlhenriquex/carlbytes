@@ -36,3 +36,57 @@ header {
 .banner {
     width: 100%;
 }
+
+.box-main {
+    display: flex;
+}
+
+.box-texto .titulo {
+    font-size: 6.5rem;
+    max-width: 80%;
+}
+
+.box-texto .titulo span {
+    color: var(--tertiary-color);
+}
+
+.box-texto .formacoes {
+    display: flex;
+}
+
+.box-texto .formacoes .formacao {
+    display: flex;
+    gap: .5rem;
+    padding: 0 1.5rem;
+}
+
+.box-texto .formacoes .formacao:nth-child(2) {
+    border-inline: 1px solid;
+}
+
+.formacao {
+    display: flex;
+
+}
+
+.box-texto .ferramentas {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 9px;
+    background:rgba(10, 18, 30, .9);
+    border:1px solid rgba(255,255,255,.14);
+    margin-top: 1.5rem;
+    max-width: fit-content;
+    padding: .6rem 1rem;
+}
+
+.box-texto .ferramentas .ferramenta {
+    display: flex;
+    padding: 0 1rem;
+}
+
+.box-imagem {
+    position: relative;
+    min-height: 650px;
+}
