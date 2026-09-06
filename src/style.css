@@ -214,10 +214,10 @@ header {
 
 .post-it {
     position: absolute;
-    top: 280px;
-    left: 260px;
-    width: 160px;
-    height: 100px;
+    top: 265px;
+    left: 210px;
+    width: 150px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,8 +227,37 @@ header {
     font-family: cursive;
     font-size: 20px;
     transform: rotate(-8deg);
-    box-shadow:
-        0 12px 25px rgba(0,0,0,.3);
+    box-shadow: 0 12px 25px rgba(0,0,0,.3);
+}
+
+.perfil {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    left: 400px;
+    bottom: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid var(--tertiary-color);
+}
+
+.perfil img {
+    align-self: center;
+    width: 100%;
+}
+
+.linux-img {
+    position: absolute;
+    width: 5rem;
+    left: 680px;
+    bottom: 70px;
+    transform: rotate(12deg);
+    transition: ease .5s;
+}
+
+.linux-img:hover {
+    transform: rotate(3deg);
+    width: 5.6rem;
 }
 
 .redes-sociais {
