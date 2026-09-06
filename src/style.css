@@ -230,6 +230,33 @@ header {
     box-shadow: 0 12px 25px rgba(0,0,0,.3);
 }
 
+.fita {
+    position: absolute;
+    width: 70px;
+    height: 20px;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255,255,255,.7);
+    z-index: 1;
+}
+
+
+/* PEQUENA TEXTURA NA FITA */
+
+.fita::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        repeating-linear-gradient(
+            90deg,
+            transparent 0,
+            transparent 4px,
+            rgba(104, 104, 104, 0.2) 5px
+        );
+}
+
 .perfil {
     position: absolute;
     width: 350px;
@@ -249,15 +276,33 @@ header {
 .linux-img {
     position: absolute;
     width: 5rem;
-    left: 680px;
-    bottom: 70px;
-    transform: rotate(12deg);
+    left: 660px;
+    bottom: 60px;
+    transform: rotate(10deg);
     transition: ease .5s;
 }
 
 .linux-img:hover {
     transform: rotate(3deg);
     width: 5.6rem;
+}
+
+.post-it-educacao {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 430px;
+    left: 840px;
+    width: 200px;
+    height: 130px;
+    text-align: center;
+    background: #f3c94d;
+    color: #000000;
+    font-family: cursive;
+    font-size: 1.1rem;
+    transform: rotate(2deg);
+    box-shadow: 0 12px 25px rgba(0,0,0,.3);
 }
 
 .redes-sociais {
