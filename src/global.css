@@ -1,6 +1,12 @@
 :root {
     --fonte: "Google Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     --pf-font: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    --font-color: #ffffff;
+    --primary-color: #021A29;
+    --tertiary-color: #00AECA;
+    --success: #55d889;
+    --warning: #e9c957;
+    --failure: #ef5a61;
 }
 
 * {
@@ -10,9 +16,22 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: var(--fonte);
+    color: var(--font-color);
     scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--background);
+    position: relative;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    grid-template-columns: 36% 36% 28%;
+    padding: 3rem 4rem;
+    overflow: hidden;
+    background: radial-gradient(circle at 50% 40%, #021A29, transparent 40%),
+    linear-gradient(135deg, #021A29, #021A29 65%, #021A29);
 }
