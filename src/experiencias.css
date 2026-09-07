@@ -1,0 +1,135 @@
+.experiencias {
+    max-width: 1100px;
+    margin: 5rem auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 6rem;
+}
+
+.experiencia {
+    width: 100%;
+    padding: 28px;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 175, 202, 0.12) 0%,
+        var(--primary-color) 35%,
+        var(--primary-color) 70%,
+        rgba(52, 82, 255, 0.08) 100%
+    );
+    border: 1px solid rgba(74, 122, 173, 0.45);
+    border-radius: 14px;
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.03);
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.experiencia:hover {
+    transform: translateY(-6px);
+    border-color: var(--tertiary-color);
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.5),
+        0 0 25px rgba(100, 60, 255, 0.12);
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.experiencia-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 28px;
+    position: relative;
+}
+
+
+/* =========================
+   ÍCONE
+========================= */
+
+.experiencia-icon {
+    width: 68px;
+    height: 68px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: linear-gradient(
+        145deg,
+        #111b2e,
+        #080d18
+    );
+    border: 1px solid var(--tertiary-color);
+    box-shadow:
+        0 0 20px rgba(106, 66, 255, 0.18),
+        inset 0 0 15px rgba(255, 255, 255, 0.02);
+}
+
+.experiencia-icon span {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.experiencia-icon.aws span {
+    color: #f2a32a;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.experiencia-title {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.experiencia-date {
+    width: fit-content;
+
+    padding: 5px 10px;
+
+    border-radius: 5px;
+
+    background: linear-gradient(
+        90deg,
+        #283f9b,
+        #5a39c9
+    );
+
+    color: #d9dcff;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.experiencia-title h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #f2f4f8;
+}
+
+.experiencia-title p {
+    color: #9ba8b8;
+    font-size: 15px;
+}
+
+/* =========================
+   DESCRIÇÃO
+========================= */
+
+.descricao {
+    color: #b7c0cc;
+    font-size: .9rem;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
