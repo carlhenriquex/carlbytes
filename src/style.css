@@ -35,9 +35,16 @@
     display: flex;
 }
 
+.box-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .box-texto .titulo {
     font-size: 6.5rem;
     max-width: 80%;
+    line-height: 6rem;
 }
 
 .box-texto .titulo span {
@@ -118,7 +125,7 @@
     top: 220px;
     left: 150px;
     width: 200px;
-    padding: 12px 16px;
+    padding: .9rem 1.1rem;
     margin-bottom: 35px;
     border-radius: 9px;
     background:rgba(10, 18, 30, .9);
