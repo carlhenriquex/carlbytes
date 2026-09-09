@@ -1,0 +1,215 @@
+.sobre-container {
+    width: min(100%, 900px);
+    margin: 0 auto;
+}
+
+
+/* TERMINAL */
+
+.terminal {
+    background: rgba(10, 18, 30, 0.9);
+
+    border: 1px solid rgba(0, 174, 202, 0.3);
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.35),
+        0 0 30px rgba(0, 174, 202, 0.06);
+
+    backdrop-filter: blur(10px);
+}
+
+
+/* BARRA SUPERIOR */
+
+.terminal-header {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid rgba(0, 174, 202, 0.15);
+    position: relative;
+}
+
+
+.terminal-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+
+.terminal-buttons span {
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+}
+
+
+/* TÍTULO */
+
+.terminal-titulo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 13px;
+    font-family: monospace;
+}
+
+
+/* CONTEÚDO */
+
+.terminal-content {
+    padding: 35px;
+
+    font-family:
+        "JetBrains Mono",
+        "Fira Code",
+        Consolas,
+        monospace;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* COMANDOS */
+
+.command {
+    margin: 20px 0 8px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 5px;
+}
+
+
+.command:first-child {
+    margin-top: 0;
+}
+
+
+.user {
+    color: #00AECA;
+
+    font-weight: 600;
+}
+
+
+.separator {
+    color: #ffffff;
+}
+
+
+.directory {
+    color: #8b5cf6;
+}
+
+
+.symbol {
+    color: #00AECA;
+
+    margin-right: 8px;
+}
+
+
+.command-text {
+    color: #f1f5f9;
+}
+
+
+/* SAÍDA DO TERMINAL */
+
+.output {
+    margin: 0 0 25px 0;
+
+    color: #aab7c4;
+
+    padding-left: 5px;
+}
+
+
+/* TEXTO SOBRE MIM */
+
+.about-text {
+    max-width: 750px;
+
+    padding-left: 18px;
+
+    border-left: 2px solid rgba(0, 174, 202, 0.4);
+}
+
+
+.about-text p {
+    margin-bottom: 16px;
+
+    color: #aeb9c6;
+}
+
+
+.about-text strong {
+    color: #00AECA;
+
+    font-weight: 600;
+}
+
+
+/* CURSOR */
+
+.cursor {
+    display: inline-block;
+
+    width: 9px;
+    height: 18px;
+
+    background: #00AECA;
+
+    margin-left: 4px;
+
+    animation: blink 1s infinite;
+}
+
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    .terminal-content {
+        padding: 22px;
+
+        font-size: 13px;
+    }
+
+
+    .terminal-title {
+        display: none;
+    }
+
+
+    .terminal-header {
+        justify-content: center;
+    }
+
+}
