@@ -1,0 +1,171 @@
+.banner {
+    gap: 70px;
+
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: .5rem 0 0px;
+}
+
+.box-texto {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    max-width: 520px;
+}
+
+.box-texto > span {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    color: #00AECA;
+
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+
+/* TÍTULO */
+
+.box-texto .titulo {
+    margin: 0 0 26px;
+
+    color: #F1F5F9;
+
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+}
+
+.box-texto .titulo span {
+    display: block;
+
+    background: linear-gradient(
+        90deg,
+        #00AECA 0%,
+        #5268FF 55%,
+        #7C3AED 100%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* DESCRIÇÃO */
+
+.box-texto .descricao {
+    max-width: 500px;
+
+    margin: 0 0 16px;
+
+    color: #AAB7C4;
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.box-texto .descricao:last-of-type {
+    margin-bottom: 35px;
+}
+
+.dados {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+
+    width: 100%;
+    max-width: 520px;
+}
+
+.dado {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    min-width: 0;
+
+    padding: 18px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(0, 174, 202, 0.1) 0%,
+        rgba(10, 18, 30, 0.9) 45%,
+        rgba(82, 104, 255, 0.06) 100%
+    );
+
+    border: 1px solid rgba(0, 174, 202, 0.22);
+
+    border-radius: 12px;
+
+    transition: 0.3s ease;
+}
+
+.dado:hover {
+    border-color: rgba(0, 174, 202, 0.55);
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.2),
+        0 0 20px rgba(0, 174, 202, 0.05);
+}
+
+.dado > i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    color: #00AECA;
+
+    font-size: 21px;
+
+    background: rgba(0, 174, 202, 0.1);
+
+    border: 1px solid rgba(0, 174, 202, 0.25);
+
+    border-radius: 10px;
+}
+
+.dado > div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+
+    min-width: 0;
+}
+
+.dado strong {
+    color: #F1F5F9;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.dado p {
+    margin: 0;
+
+    color: #718096;
+
+    font-size: 12px;
+    line-height: 1.4;
+}
