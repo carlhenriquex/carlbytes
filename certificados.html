@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="src/certificados.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <link rel="stylesheet" href="src/sections.css">
+
     <title>Certificados</title>
 </head>
 <body>
@@ -29,7 +31,7 @@
             <div class="box-texto">
                 <span>CERTIFICADOS</span>
                 <h2 class="titulo">Conhecimento <span>que me move.</span></h2>
-                <p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, ut. Mollitia nihil maiores nemo, ex optio assumenda laboriosam vero cum suscipit ea quod necessitatibus tenetur tempore explicabo blanditiis molestiae? Libero!</p>
+                <p class="descricao">Especializações adquiridos ao longo da minha trajetória.</p>
                 <div class="dados">
                     <div class="dado">
                         <i class="bi bi-award"></i>
@@ -41,25 +43,337 @@
                     </div>
                 </div>
             </div>
-            <div class="box-certificado">
-                
-            </div>
         </div>
 
-        <div class="box-certificados">
-            <h3>Meus certificados</h3>
+        <section class="box-certificados">
             <div class="certificados">
-                <div class="certificado">
-                    <img src="assets/images/certificados/aponti-python.jpg" alt="">
-                </div>
-                <div class="certificado">
-                    <img src="assets/images/certificados/fast-cybersecurity.jpg" alt="">
-                </div>
-                <div class="certificado">
-                    <img src="assets/images/certificados/senai-gestaoTI.png" alt="">
-                </div>
+
+                <!-- Aponti Python -->
+                <article class="certificado">
+                    <button
+                        class="certificado-imagem"
+                        type="button"
+                        data-certificado="assets/images/certificados/aponti-python.jpg"
+                        aria-label="Ampliar certificado de Python da Aponti"
+                    >
+                        <img
+                            src="assets/images/certificados/aponti-python.jpg"
+                            alt="Certificado de Python da Aponti"
+                        >
+
+                        <span class="certificado-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            Ampliar
+                        </span>
+                    </button>
+
+                    <div class="certificado-info">
+                        <span class="certificado-categoria">Programação</span>
+                        <h4>Python</h4>
+                        <p>Aponti</p>
+                    </div>
+                </article>
+
+
+                <!-- DIO AWS Practitioner -->
+                <article class="certificado">
+                    <button
+                        class="certificado-imagem"
+                        type="button"
+                        data-certificado="assets/images/certificados/dio-aws-pratitioner.png"
+                        aria-label="Ampliar certificado AWS Practitioner da DIO"
+                    >
+                        <img
+                            src="assets/images/certificados/dio-aws-pratitioner.png"
+                            alt="Certificado AWS Practitioner da DIO"
+                        >
+
+                        <span class="certificado-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            Ampliar
+                        </span>
+                    </button>
+
+                    <div class="certificado-info">
+                        <span class="certificado-categoria">Cloud Computing</span>
+                        <h4>AWS Practitioner</h4>
+                        <p>DIO</p>
+                    </div>
+                </article>
+
+                <!-- FAST Cybersecurity -->
+                <article class="certificado">
+                    <button
+                        class="certificado-imagem"
+                        type="button"
+                        data-certificado="assets/images/certificados/fast-cybersecurity.jpg"
+                        aria-label="Ampliar certificado de Cybersecurity da FAST"
+                    >
+                        <img
+                            src="assets/images/certificados/fast-cybersecurity.jpg"
+                            alt="Certificado de Cybersecurity da FAST"
+                        >
+
+                        <span class="certificado-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            Ampliar
+                        </span>
+                    </button>
+
+                    <div class="certificado-info">
+                        <span class="certificado-categoria">Segurança da Informação</span>
+                        <h4>Cybersecurity</h4>
+                        <p>FAST</p>
+                    </div>
+                </article>
+
+
+                <!-- SENAI Gestão de TI -->
+                <article class="certificado">
+                    <button
+                        class="certificado-imagem"
+                        type="button"
+                        data-certificado="assets/images/certificados/senai-gestaoTI.png"
+                        aria-label="Ampliar certificado de Gestão de TI do SENAI"
+                    >
+                        <img
+                            src="assets/images/certificados/senai-gestaoTI.png"
+                            alt="Certificado de Gestão de TI do SENAI"
+                        >
+
+                        <span class="certificado-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            Ampliar
+                        </span>
+                    </button>
+
+                    <div class="certificado-info">
+                        <span class="certificado-categoria">Gestão</span>
+                        <h4>Gestão de TI</h4>
+                        <p>SENAI</p>
+                    </div>
+                </article>
+
+
+                <!-- DIO DevOps Fundamentals -->
+                <article class="certificado">
+                    <button
+                        class="certificado-imagem"
+                        type="button"
+                        data-certificado="assets/images/certificados/dio-devops-fundamentals.jpg"
+                        aria-label="Ampliar certificado DevOps Fundamentals da DIO"
+                    >
+                        <img
+                            src="assets/images/certificados/dio-devops-fundamentals.jpg"
+                            alt="Certificado DevOps Fundamentals da DIO"
+                        >
+
+                        <span class="certificado-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            Ampliar
+                        </span>
+                    </button>
+
+                    <div class="certificado-info">
+                        <span class="certificado-categoria">DevOps</span>
+                        <h4>DevOps Fundamentals</h4>
+                        <p>DIO</p>
+                    </div>
+                </article>
+
+
+                <!-- DIO Docker Fundamentals -->
+                <article class="certificado">
+                    <button
+                        class="certificado-imagem"
+                        type="button"
+                        data-certificado="assets/images/certificados/dio-docker-fundamentals.jpg"
+                        aria-label="Ampliar certificado Docker Fundamentals da DIO"
+                    >
+                        <img
+                            src="assets/images/certificados/dio-docker-fundamentals.jpg"
+                            alt="Certificado Docker Fundamentals da DIO"
+                        >
+
+                        <span class="certificado-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            Ampliar
+                        </span>
+                    </button>
+
+                    <div class="certificado-info">
+                        <span class="certificado-categoria">Containers</span>
+                        <h4>Docker Fundamentals</h4>
+                        <p>DIO</p>
+                    </div>
+                </article>
+
+
+                <!-- DIO Interface Designer -->
+                <article class="certificado">
+                    <button
+                        class="certificado-imagem"
+                        type="button"
+                        data-certificado="assets/images/certificados/dio-interface-designer.png"
+                        aria-label="Ampliar certificado Interface Designer da DIO"
+                    >
+                        <img
+                            src="assets/images/certificados/dio-interface-designer.png"
+                            alt="Certificado Interface Designer da DIO"
+                        >
+
+                        <span class="certificado-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            Ampliar
+                        </span>
+                    </button>
+
+                    <div class="certificado-info">
+                        <span class="certificado-categoria">Design</span>
+                        <h4>Interface Designer</h4>
+                        <p>DIO</p>
+                    </div>
+                </article>
+
+
+                <!-- DIO Kubernetes Fundamentals -->
+                <article class="certificado">
+                    <button
+                        class="certificado-imagem"
+                        type="button"
+                        data-certificado="assets/images/certificados/dio-kubernetes-fundamentals.png"
+                        aria-label="Ampliar certificado Kubernetes Fundamentals da DIO"
+                    >
+                        <img
+                            src="assets/images/certificados/dio-kubernetes-fundamentals.png"
+                            alt="Certificado Kubernetes Fundamentals da DIO"
+                        >
+
+                        <span class="certificado-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            Ampliar
+                        </span>
+                    </button>
+
+                    <div class="certificado-info">
+                        <span class="certificado-categoria">Orquestração</span>
+                        <h4>Kubernetes Fundamentals</h4>
+                        <p>DIO</p>
+                    </div>
+                </article>
+
+
+                <!-- DIO Linux Fundamentals -->
+                <article class="certificado">
+                    <button
+                        class="certificado-imagem"
+                        type="button"
+                        data-certificado="assets/images/certificados/dio-linux-fundamentals.jpg"
+                        aria-label="Ampliar certificado Linux Fundamentals da DIO"
+                    >
+                        <img
+                            src="assets/images/certificados/dio-linux-fundamentals.jpg"
+                            alt="Certificado Linux Fundamentals da DIO"
+                        >
+
+                        <span class="certificado-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            Ampliar
+                        </span>
+                    </button>
+
+                    <div class="certificado-info">
+                        <span class="certificado-categoria">Sistemas Operacionais</span>
+                        <h4>Linux Fundamentals</h4>
+                        <p>DIO</p>
+                    </div>
+                </article>
+
+                <!-- Serasa Agile -->
+                <article class="certificado">
+                    <button
+                        class="certificado-imagem"
+                        type="button"
+                        data-certificado="assets/images/certificados/serasa-agile.png"
+                        aria-label="Ampliar certificado de Agile da Serasa"
+                    >
+                        <img
+                            src="assets/images/certificados/serasa-agile.png"
+                            alt="Certificado de Agile da Serasa"
+                        >
+
+                        <span class="certificado-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            Ampliar
+                        </span>
+                    </button>
+
+                    <div class="certificado-info">
+                        <span class="certificado-categoria">Metodologias</span>
+                        <h4>Agile</h4>
+                        <p>Serasa Experian</p>
+                    </div>
+                </article>
+
+
+                <!-- Serasa Comunicação -->
+                <article class="certificado">
+                    <button
+                        class="certificado-imagem"
+                        type="button"
+                        data-certificado="assets/images/certificados/serasa-comunicacao.png"
+                        aria-label="Ampliar certificado de Comunicação da Serasa"
+                    >
+                        <img
+                            src="assets/images/certificados/serasa-comunicacao.png"
+                            alt="Certificado de Comunicação da Serasa"
+                        >
+
+                        <span class="certificado-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            Ampliar
+                        </span>
+                    </button>
+
+                    <div class="certificado-info">
+                        <span class="certificado-categoria">Soft Skills</span>
+                        <h4>Comunicação</h4>
+                        <p>Serasa Experian</p>
+                    </div>
+                </article>
+
             </div>
-        </div>
+
+        </section>
     </main>
+
+    <!-- MODAL DE VISUALIZAÇÃO -->
+
+    <div class="modal-certificado" id="modal-certificado" aria-hidden="true">
+
+        <div class="modal-certificado-overlay"></div>
+
+        <div class="modal-certificado-conteudo">
+
+            <button
+                class="modal-certificado-fechar"
+                type="button"
+                aria-label="Fechar visualização"
+            >
+                <i class="bi bi-x-lg"></i>
+            </button>
+
+            <img
+                id="modal-certificado-imagem"
+                src=""
+                alt="Certificado ampliado"
+            >
+
+        </div>
+
+    </div>
+
+
+    <script src="scripts/certificados.js"></script>
 </body>
 </html>
