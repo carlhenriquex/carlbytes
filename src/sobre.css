@@ -1,0 +1,208 @@
+.terminal-card {
+
+    background: linear-gradient(135deg, #101b29, #050a12);
+    border: 1px solid rgba(255,255,255,.16);
+    border-radius: 14px;
+    box-shadow: 0 25px 60px rgba(0,0,0,.45);
+    overflow: hidden;
+    font-family: "Space Mono", monospace;
+}
+
+.terminal-top {
+    width: 880px;
+    height: 480px;
+    margin: 6rem auto 0;
+}
+
+.window-header {
+    height: 34px;
+    padding: 12px;
+    display: flex;
+    gap: 7px;
+}
+
+.window-header span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.red-bola {
+    background: #ef5a61;
+}
+
+.yellow-bola {
+    background: #e9c957;
+}
+
+.green-bola {
+    background: var(--success);
+}
+
+
+.terminal-content {
+    padding: 5px 22px 18px;
+    font-size: .75rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,.72);
+}
+
+.success {
+    color: var(--success);
+}
+
+.terminal {
+    padding: .3rem 1.5rem .7rem;
+}
+
+.terminal-titulo {
+    position: absolute;
+    left: 45%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 13px;
+    font-family: monospace;
+    text-wrap: nowrap;
+}
+
+
+.terminal-content {
+    padding: 35px;
+
+    font-family:
+        "JetBrains Mono",
+        "Fira Code",
+        Consolas,
+        monospace;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* COMANDOS */
+
+.command {
+    margin: 20px 0 8px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 5px;
+}
+
+
+.command:first-child {
+    margin-top: 0;
+}
+
+
+.user {
+    font-weight: 600;
+}
+
+
+.separator {
+    color: #ffffff;
+}
+
+
+.directory {
+    color: #8b5cf6;
+}
+
+
+.symbol {
+    color: var(--success);
+
+    margin-right: 8px;
+}
+
+
+/* SAÍDA DO TERMINAL */
+
+.output {
+    margin: 0 0 25px 0;
+
+    color: #aab7c4;
+
+    padding-left: 5px;
+}
+
+
+/* TEXTO SOBRE MIM */
+
+.about-text {
+    max-width: 750px;
+
+    padding-left: 18px;
+
+    border-left: 2px solid rgba(0, 202, 7, 0.604);
+}
+
+
+.about-text p {
+    margin-bottom: 16px;
+
+    color: #aeb9c6;
+}
+
+
+.about-text strong {
+    font-weight: 600;
+}
+
+
+/* CURSOR */
+
+.cursor {
+    display: inline-block;
+
+    width: 9px;
+    height: 18px;
+
+    background: var(--font-color);
+
+    margin-left: 4px;
+
+    animation: blink 1s infinite;
+}
+
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    .terminal-content {
+        padding: 22px;
+
+        font-size: 13px;
+    }
+
+
+    .terminal-title {
+        display: none;
+    }
+
+
+    .terminal-header {
+        justify-content: center;
+    }
+
+}
